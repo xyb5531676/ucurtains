@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curtain & Blind Installation Gallery | Brisbane Projects | U Curtains</title>
+<meta name="description" content="Browse our gallery of completed curtain, blind and shutter installations across Brisbane. See S-Fold curtains, zebra blinds, sheers, shutters and more — all custom-made and installed by U Curtains.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.ucurtains.com.au/gallery">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#F7F4EF;--warm-white:#FDFBF8;--charcoal:#1C1C1C;--mid:#5A5A5A;--light:#9A9A9A;--border:#E2DDD6;--accent:#8B6F47;--accent-light:#F0E8DC;--gold:#C9A96E;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--warm-white);color:var(--charcoal);font-size:16px;line-height:1.6;}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(253,251,248,0.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);padding:0 5vw;display:flex;align-items:center;justify-content:space-between;height:70px;}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:var(--charcoal);text-decoration:none;}
+.nav-logo span{color:var(--accent);}
+.nav-links{display:flex;gap:2rem;list-style:none;}
+.nav-links a{text-decoration:none;color:var(--mid);font-size:0.85rem;letter-spacing:0.06em;text-transform:uppercase;transition:color 0.2s;}
+.nav-links a:hover,.nav-links a.active{color:var(--charcoal);}
+.nav-cta{background:var(--charcoal);color:white!important;padding:0.5rem 1.2rem;border-radius:2px;font-size:0.8rem!important;}
+.nav-cta:hover{background:var(--accent)!important;}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;}
+.hamburger span{width:22px;height:1.5px;background:var(--charcoal);display:block;}
+.mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;background:var(--warm-white);border-bottom:1px solid var(--border);padding:1.5rem 5vw;z-index:99;flex-direction:column;gap:1rem;}
+.mobile-menu.open{display:flex;}
+.mobile-menu a{color:var(--charcoal);text-decoration:none;font-size:1rem;padding:0.5rem 0;border-bottom:1px solid var(--border);}
+
+.page-hero{padding:140px 5vw 60px;background:var(--cream);border-bottom:1px solid var(--border);}
+.page-hero-inner{max-width:1200px;margin:0 auto;}
+.breadcrumb{font-size:0.8rem;color:var(--light);margin-bottom:1rem;}
+.breadcrumb a{color:var(--light);text-decoration:none;}
+.section-label{font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem;display:block;}
+.page-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,4vw,3.5rem);font-weight:300;line-height:1.15;margin-bottom:1rem;}
+.page-hero h1 em{font-style:italic;color:var(--accent);}
+.page-hero p{font-size:1.05rem;color:var(--mid);max-width:600px;line-height:1.8;}
+
+/* filter tabs */
+.filter-bar{padding:0 5vw;background:white;border-bottom:1px solid var(--border);position:sticky;top:70px;z-index:50;}
+.filter-inner{max-width:1200px;margin:0 auto;display:flex;gap:0;overflow-x:auto;}
+.filter-btn{padding:1rem 1.4rem;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--mid);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;white-space:nowrap;transition:all 0.2s;font-family:'DM Sans',sans-serif;}
+.filter-btn:hover{color:var(--charcoal);}
+.filter-btn.active{color:var(--charcoal);border-bottom-color:var(--gold);}
+
+/* gallery grid */
+.gallery-section{padding:60px 5vw 90px;}
+.gallery-inner{max-width:1200px;margin:0 auto;}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+.gallery-item{position:relative;overflow:hidden;border-radius:4px;cursor:pointer;background:var(--border);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;}
+.gallery-item.tall{grid-row:span 2;aspect-ratio:auto;}
+.gallery-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.75rem;background:linear-gradient(135deg,var(--cream) 0%,var(--border) 100%);}
+.gallery-placeholder .emoji{font-size:2.5rem;}
+.gallery-overlay{position:absolute;inset:0;background:rgba(28,28,28,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:1.5rem;}
+.gallery-item:hover .gallery-overlay{background:rgba(28,28,28,0.6);}
+.gallery-caption{color:white;opacity:0;transform:translateY(8px);transition:all 0.3s;}
+.gallery-item:hover .gallery-caption{opacity:1;transform:translateY(0);}
+.gallery-caption h3{font-size:0.95rem;font-weight:500;margin-bottom:0.2rem;}
+.gallery-caption p{font-size:0.78rem;color:rgba(255,255,255,0.7);}
+
+/* photo notice */
+.photo-notice{background:var(--accent-light);border:1px solid var(--border);border-radius:4px;padding:1.2rem 1.5rem;margin-bottom:2.5rem;display:flex;gap:1rem;align-items:flex-start;}
+.photo-notice p{font-size:0.87rem;color:var(--mid);line-height:1.6;}
+.photo-notice p strong{color:var(--charcoal);}
+
+.cta-banner{background:var(--accent);padding:80px 5vw;text-align:center;}
+.cta-banner h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;color:white;margin-bottom:1rem;}
+.cta-banner p{color:rgba(255,255,255,0.8);margin-bottom:2rem;}
+.btn-white{display:inline-block;background:white;color:var(--accent);padding:0.9rem 2.5rem;text-decoration:none;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;border-radius:2px;transition:all 0.2s;}
+.btn-white:hover{background:var(--charcoal);color:white;}
+
+footer{background:#111;color:rgba(255,255,255,0.7);padding:60px 5vw 30px;}
+.footer-inner{max-width:1200px;margin:0 auto;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,0.1);margin-bottom:2rem;}
+.footer-brand p{font-size:0.85rem;line-height:1.7;color:rgba(255,255,255,0.5);margin-top:1rem;}
+.footer-col h4{font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:white;margin-bottom:1rem;}
+.footer-col ul{list-style:none;}
+.footer-col li{margin-bottom:0.5rem;}
+.footer-col a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.875rem;transition:color 0.2s;}
+.footer-col a:hover{color:var(--gold);}
+.footer-contact p{font-size:0.875rem;color:rgba(255,255,255,0.5);margin-bottom:0.5rem;}
+.footer-contact a{color:var(--gold);text-decoration:none;}
+.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:0.8rem;color:rgba(255,255,255,0.3);}
+
+@media(max-width:900px){
+  .nav-links,.nav-cta{display:none;}
+  .hamburger{display:flex;}
+  .gallery-grid{grid-template-columns:1fr 1fr;}
+  .gallery-item.tall{grid-row:span 1;aspect-ratio:4/3;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:600px){
+  .gallery-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/ucurtains/" class="nav-logo">U <span>Curtains</span></a>
+  <ul class="nav-links">
+    <li><a href="/ucurtains/curtains.html">Curtains</a></li>
+    <li><a href="/ucurtains/sheers.html">Sheers</a></li>
+    <li><a href="/ucurtains/blinds.html">Blinds</a></li>
+    <li><a href="/ucurtains/shutters.html">Shutters</a></li>
+    <li><a href="/ucurtains/gallery.html" class="active">Gallery</a></li>
+    <li><a href="/ucurtains/about.html">About</a></li>
+    <li><a href="/ucurtains/contact.html" class="nav-cta">Free Quote</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/ucurtains/">Home</a>
+  <a href="/ucurtains/curtains.html">Curtains</a>
+  <a href="/ucurtains/sheers.html">Sheers</a>
+  <a href="/ucurtains/blinds.html">Blinds</a>
+  <a href="/ucurtains/shutters.html">Shutters</a>
+  <a href="/ucurtains/gallery.html">Gallery</a>
+  <a href="/ucurtains/about.html">About</a>
+  <a href="/ucurtains/contact.html">Free Quote</a>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="/ucurtains/">Home</a> › Gallery</div>
+    <span class="section-label">Real Brisbane Installations</span>
+    <h1>Our <em>Work</em></h1>
+    <p>Browse our portfolio of completed installations across Brisbane homes. Every project is custom-made and professionally installed by our team — from zebra blinds in Sunnybank to S-Fold curtains in Carindale.</p>
+  </div>
+</div>
+
+<div class="filter-bar">
+  <div class="filter-inner">
+    <button class="filter-btn active" onclick="filterGallery('all',this)">All</button>
+    <button class="filter-btn" onclick="filterGallery('curtains',this)">Curtains</button>
+    <button class="filter-btn" onclick="filterGallery('sheers',this)">Sheers</button>
+    <button class="filter-btn" onclick="filterGallery('blinds',this)">Blinds</button>
+    <button class="filter-btn" onclick="filterGallery('shutters',this)">Shutters</button>
+  </div>
+</div>
+
+<section class="gallery-section">
+  <div class="gallery-inner">
+
+    <div class="photo-notice">
+      <span style="font-size:1.2rem;flex-shrink:0;">📸</span>
+      <p><strong>Photos coming soon.</strong> We're currently uploading our installation photos. In the meantime, <a href="/ucurtains/contact.html" style="color:var(--accent);">contact us</a> to see examples of our work or follow us on Instagram for the latest projects.</p>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item tall" data-cat="curtains">
+        <div class="gallery-placeholder"><span class="emoji">〰️</span><span style="font-size:0.8rem;color:var(--mid);">S-Fold Curtains</span></div>
+        <div class="gallery-overlay"><div class="gallery-caption"><h3>S-Fold Curtains</h3><p>Master bedroom · Sunnybank</p></div></div>
+      </div>
+      <div class="gallery-item" data-cat="blinds">
+        <div class="gallery-placeholder"><span class="emoji">🔲</span><span style="font-size:0.8rem;color:var(--mid);">Zebra Blinds</span></div>
+        <div class="gallery-overlay"><div class="gallery-caption"><h3>Zebra Blinds</h3><p>Living room · Carindale</p></div></div>
+      </div>
+      <div class="gallery-item" data-cat="sheers">
+        <div class="gallery-placeholder"><span class="emoji">✨</span><span style="font-size:0.8rem;color:var(--mid);">Linen Sheers</span></div>
+        <div class="gallery-overlay"><div class="gallery-caption"><h3>Linen Sheers</h3><p>Dining room · Eight Mile Plains</p></div></div>
+      </div>
+      <div class="gallery-item" data-cat="blinds">
+        <div class="gallery-placeholder"><span class="emoji">🪟</span><span style="font-size:0.8rem;color:var(--mid);">Roller Blinds</span></div>
+        <div class="gallery-overlay"><div class="gallery-caption"><h3>Roller Blinds</h3><p>Home office · Moorooka</p></div></div>
+      </div>
+      <div class="gallery-item" data-cat="shutters">
+        <div class="gallery-placeholder"><span class="emoji">🏠</span><span style="font-size:0.8rem;color:var(--mid);">Plantation Shutters</span></div>
+        <div class="gallery-overlay"><div class="gallery-caption"><h3>Plantation Shutters</h3><p>Living room · Acacia Ridge</p></div></div>
+      </div>
+      <div class="gallery-item tall" data-cat="curtains">
+        <div class="gallery-placeholder"><span class="emoji">🪡</span><span style="font-size:0.8rem;color:var(--mid);">Pinch Pleat Curtains</span></div>
+        <div class="gallery-overlay"><div class="gallery-caption"><h3>Triple Pinch Pleat</h3><p>Formal living room · Rochedale</p></div></div>
+      </div>
+      <div class="gallery-item" data-cat="blinds">
+        <div class="gallery-placeholder"><span class="emoji">📐</span><span style="font-size:0.8rem;color:var(--mid);">Roman Blinds</span></div>
+        <div class="gallery-overlay"><div class="gallery-caption"><h3>Roman Blinds</h3><p>Kitchen · Runcorn</p></div></div>
+      </div>
+      <div class="gallery-item" data-cat="sheers">
+        <div class="gallery-placeholder"><span class="emoji">🌿</span><span style="font-size:0.8rem;color:var(--mid);">Polyester Sheers</span></div>
+        <div class="gallery-overlay"><div class="gallery-caption"><h3>Polyester Sheers</h3><p>Bedroom · Macgregor</p></div></div>
+      </div>
+      <div class="gallery-item" data-cat="blinds">
+        <div class="gallery-placeholder"><span class="emoji">📱</span><span style="font-size:0.8rem;color:var(--mid);">Smart Blinds</span></div>
+        <div class="gallery-overlay"><div class="gallery-caption"><h3>Smart Motorised Blinds</h3><p>Open plan · Stretton</p></div></div>
+      </div>
+      <div class="gallery-item" data-cat="curtains">
+        <div class="gallery-placeholder"><span class="emoji">⭕</span><span style="font-size:0.8rem;color:var(--mid);">Eyelet Curtains</span></div>
+        <div class="gallery-overlay"><div class="gallery-caption"><h3>Eyelet Curtains</h3><p>Kids room · Salisbury</p></div></div>
+      </div>
+      <div class="gallery-item" data-cat="shutters">
+        <div class="gallery-placeholder"><span class="emoji">🏡</span><span style="font-size:0.8rem;color:var(--mid);">Faux Timber Shutters</span></div>
+        <div class="gallery-overlay"><div class="gallery-caption"><h3>Faux Timber Shutters</h3><p>Bathroom · Wishart</p></div></div>
+      </div>
+      <div class="gallery-item" data-cat="blinds">
+        <div class="gallery-placeholder"><span class="emoji">🍯</span><span style="font-size:0.8rem;color:var(--mid);">Honeycomb Blinds</span></div>
+        <div class="gallery-overlay"><div class="gallery-caption"><h3>Honeycomb Blinds</h3><p>Bedroom · Kuraby</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-banner">
+  <h2>Want to See More of Our Work?</h2>
+  <p>Call us or book a free consultation and we'll show you photos and samples relevant to your home and style.</p>
+  <a href="/ucurtains/contact.html" class="btn-white">Book Free Measure & Quote</a>
+  <div style="margin-top:1.5rem;"><a href="tel:0434840889" style="color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.9rem;">or call <strong style="color:white;">0434 840 889</strong></a></div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/ucurtains/" class="nav-logo" style="color:white;">U <span style="color:var(--gold)">Curtains</span></a>
+        <p>Brisbane's family-owned custom window furnishing specialists. Curtains, blinds, sheers and shutters — made to measure, professionally installed.</p>
+        <p style="margin-top:1rem;">ABN: 68664245005</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="/ucurtains/curtains.html">Curtains</a></li>
+          <li><a href="/ucurtains/sheers.html">Sheers</a></li>
+          <li><a href="/ucurtains/blinds.html">Blinds</a></li>
+          <li><a href="/ucurtains/shutters.html">Shutters</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/ucurtains/about.html">About Us</a></li>
+          <li><a href="/ucurtains/gallery.html">Gallery</a></li>
+          <li><a href="/ucurtains/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-contact">
+        <h4>Contact</h4>
+        <p>📞 <a href="tel:0434840889">0434 840 889</a></p>
+        <p>✉ <a href="mailto:sale@ucurtains.com.au">sale@ucurtains.com.au</a></p>
+        <p>📍 2/1362 Beaudesert Road<br>Acacia Ridge QLD 4110</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 U Curtains. All rights reserved.</span>
+      <span>Installation Gallery Brisbane</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+document.addEventListener('click',function(e){const m=document.getElementById('mobileMenu');const h=document.querySelector('.hamburger');if(!m.contains(e.target)&&!h.contains(e.target))m.classList.remove('open');});
+
+function filterGallery(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    if(cat === 'all' || item.dataset.cat === cat) {
+      item.style.display = 'flex';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+}
+</script>
+</body>
+</html>
