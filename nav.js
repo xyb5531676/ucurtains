@@ -124,6 +124,7 @@ nav#mainNav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(253,
 .nav-item>a .arrow{font-size:0.6rem;transition:transform 0.2s;display:inline-block;}
 .nav-item:hover>a .arrow{transform:rotate(180deg);}
 .dropdown{position:absolute;top:70px;left:0;background:white;border:1px solid var(--border);border-top:none;min-width:200px;opacity:0;visibility:hidden;transform:translateY(-8px);transition:all 0.2s;z-index:200;box-shadow:0 8px 24px rgba(0,0,0,0.08);}
+.nav-item:nth-last-child(-n+4) .dropdown{left:auto;right:0;}
 .nav-item:hover .dropdown{opacity:1;visibility:visible;transform:translateY(0);}
 .dropdown a{display:block;padding:0.65rem 1.2rem;font-size:0.82rem;color:var(--mid);text-decoration:none;border-bottom:1px solid var(--border);transition:all 0.15s;white-space:nowrap;}
 .dropdown a:last-child{border-bottom:none;}
