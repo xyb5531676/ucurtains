@@ -42,7 +42,7 @@
 
   const NAV_HTML = `
 <nav id="mainNav">
-  <a href="${BASE}/" class="nav-logo"><img src="${BASE}/logo.jpg" alt="U Curtains - Design Your Curtain" height="48" style="height:48px;width:auto;display:block;"></a>
+  <a href="${BASE}/" class="nav-logo"><img src="${BASE}/logo.png" alt="U Curtains - Design Your Curtain" style="height:52px;width:auto;display:block;"></a>
   <ul id="navLinks">
     <li class="nav-item">
       <a href="${BASE}/curtains.html">Curtains <span class="nav-arrow">▾</span></a>
