@@ -188,4 +188,45 @@ nav#mainNav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(253,
     }
   });
 
+
+  // Fix anchor scroll offset for fixed nav (70px height)
+  function scrollWithOffset(hash) {
+    const target = document.querySelector(hash);
+    if (!target) return;
+    const offset = 90; // 70px nav + 20px breathing room
+    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top, behavior: 'smooth' });
+  }
+
+  // Handle all anchor links on the page
+  document.addEventListener('click', function(e) {
+    const link = e.target.closest('a[href*="#"]');
+    if (!link) return;
+    const href = link.getAttribute('href');
+    const hashIndex = href.indexOf('#');
+    if (hashIndex === -1) return;
+    const hash = '#' + href.split('#')[1];
+    const path = href.split('#')[0];
+    // Only intercept if same page or empty path
+    const currentPage = window.location.pathname.split('/').pop();
+    const linkPage = path.split('/').pop();
+    if (path === '' || linkPage === currentPage || path === window.location.pathname) {
+      e.preventDefault();
+      history.pushState(null, null, hash);
+      scrollWithOffset(hash);
+      // Close mobile menu if open
+      const menu = document.getElementById('mobileMenu');
+      if (menu) menu.classList.remove('open');
+    }
+  });
+
+  // Handle direct page load with hash in URL
+  window.addEventListener('load', function() {
+    if (window.location.hash) {
+      setTimeout(function() {
+        scrollWithOffset(window.location.hash);
+      }, 100);
+    }
+  });
+
 })();
