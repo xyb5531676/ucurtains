@@ -47,6 +47,7 @@
     <li class="nav-item">
       <a href="${BASE}/curtains.html">Curtains <span class="nav-arrow">▾</span></a>
       <div class="nav-dropdown">
+        <a href="${BASE}/curtains.html">Custom-Made Curtains</a>
         <a href="${BASE}/curtains.html#sfold">S-Fold</a>
         <a href="${BASE}/curtains.html#double-pinch">Double Pinch Pleat</a>
         <a href="${BASE}/curtains.html#triple-pinch">Triple Pinch Pleat</a>
@@ -102,6 +103,7 @@
   <div class="mob-section">
     <div class="mob-title">Curtains <span class="mob-arr">▾</span></div>
     <div class="mob-sub">
+      <a href="${BASE}/curtains.html">Custom-Made Curtains</a>
       <a href="${BASE}/curtains.html#sfold">S-Fold</a>
       <a href="${BASE}/curtains.html#double-pinch">Double Pinch Pleat</a>
       <a href="${BASE}/curtains.html#triple-pinch">Triple Pinch Pleat</a>
