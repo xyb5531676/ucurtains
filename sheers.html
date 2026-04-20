@@ -34,7 +34,7 @@
 html { scroll-behavior: smooth; }
 body { font-family: 'DM Sans', sans-serif; background: var(--warm-white); color: var(--charcoal); font-size: 16px; line-height: 1.6; }
 
-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(253,251,248,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); padding: 0 5vw; display: flex; align-items: center; justify-content: space-between; height: 70px; }
+
 .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: var(--charcoal); text-decoration: none; }
 .nav-logo span { color: var(--accent); }
 .nav-links { display: flex; gap: 2rem; list-style: none; }
@@ -42,11 +42,11 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba
 .nav-links a:hover, .nav-links a.active { color: var(--charcoal); }
 .nav-cta { background: var(--charcoal); color: white !important; padding: 0.5rem 1.2rem; border-radius: 2px; font-size: 0.8rem !important; }
 .nav-cta:hover { background: var(--accent) !important; }
-.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
-.hamburger span { width: 22px; height: 1.5px; background: var(--charcoal); display: block; }
-.mobile-menu { display: none; position: fixed; top: 70px; left: 0; right: 0; background: var(--warm-white); border-bottom: 1px solid var(--border); padding: 1.5rem 5vw; z-index: 99; flex-direction: column; gap: 1rem; }
-.mobile-menu.open { display: flex; }
-.mobile-menu a { color: var(--charcoal); text-decoration: none; font-size: 1rem; padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
+
+
+
+
+
 
 .page-hero { padding: 140px 5vw 80px; background: var(--cream); border-bottom: 1px solid var(--border); }
 .page-hero-inner { max-width: 1200px; margin: 0 auto; }
@@ -120,7 +120,7 @@ footer { background: #111; color: rgba(255,255,255,0.7); padding: 60px 5vw 30px;
 
 @media (max-width: 900px) {
   .nav-links, .nav-cta { display: none; }
-  .hamburger { display: flex; }
+  
   .product-inner { grid-template-columns: 1fr; gap: 2rem; }
   .product-section:nth-child(even) .product-inner { direction: ltr; }
   .pairing-grid { grid-template-columns: 1fr; }
@@ -131,30 +131,7 @@ footer { background: #111; color: rgba(255,255,255,0.7); padding: 60px 5vw 30px;
 </head>
 <body>
 
-<nav>
-  <a href="/ucurtains/" class="nav-logo">U <span>Curtains</span></a>
-  <ul class="nav-links">
-    <li><a href="/ucurtains/curtains.html">Curtains</a></li>
-    <li><a href="/ucurtains/sheers.html" class="active">Sheers</a></li>
-    <li><a href="/ucurtains/blinds.html">Blinds</a></li>
-    <li><a href="/ucurtains/shutters.html">Shutters</a></li>
-    <li><a href="/ucurtains/gallery.html">Gallery</a></li>
-    <li><a href="/ucurtains/about.html">About</a></li>
-    <li><a href="/ucurtains/contact.html" class="nav-cta">Free Quote</a></li>
-  </ul>
-  <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
-</nav>
-
-<div class="mobile-menu" id="mobileMenu">
-  <a href="/ucurtains/">Home</a>
-  <a href="/ucurtains/curtains.html">Curtains</a>
-  <a href="/ucurtains/sheers.html">Sheers</a>
-  <a href="/ucurtains/blinds.html">Blinds</a>
-  <a href="/ucurtains/shutters.html">Shutters</a>
-  <a href="/ucurtains/gallery.html">Gallery</a>
-  <a href="/ucurtains/about.html">About</a>
-  <a href="/ucurtains/contact.html">Free Quote</a>
-</div>
+<script src="/ucurtains/nav.js"></script>
 
 <div class="page-hero">
   <div class="page-hero-inner">
