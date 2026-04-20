@@ -4,7 +4,7 @@
   const NAV_CSS = `<style id="navStyles">
 :root{--cream:#F7F4EF;--warm-white:#FDFBF8;--charcoal:#1C1C1C;--mid:#5A5A5A;--light:#9A9A9A;--border:#E2DDD6;--accent:#8B6F47;--gold:#C9A96E;}
 #mainNav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(253,251,248,0.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);padding:0 5vw;display:flex;align-items:center;justify-content:space-between;height:70px;}
-.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:var(--charcoal);text-decoration:none;flex-shrink:0;}
+.nav-logo{text-decoration:none;flex-shrink:0;display:flex;align-items:center;}
 .nav-logo span{color:var(--accent);}
 #navLinks{display:flex;gap:0;list-style:none;height:70px;margin:0;padding:0;}
 .nav-item{position:relative;display:flex;align-items:center;}
@@ -42,7 +42,7 @@
 
   const NAV_HTML = `
 <nav id="mainNav">
-  <a href="${BASE}/" class="nav-logo">U <span>Curtains</span></a>
+  <a href="${BASE}/" class="nav-logo"><img src="${BASE}/logo.jpg" alt="U Curtains - Design Your Curtain" height="48" style="height:48px;width:auto;display:block;"></a>
   <ul id="navLinks">
     <li class="nav-item">
       <a href="${BASE}/curtains.html">Curtains <span class="nav-arrow">▾</span></a>
@@ -155,6 +155,16 @@
 
   // Inject CSS
   document.head.insertAdjacentHTML('beforeend', NAV_CSS);
+
+  // Inject favicon
+  const favicon = document.createElement('link');
+  favicon.rel = 'icon';
+  favicon.type = 'image/png';
+  favicon.href = BASE + '/favicon.png';
+  document.head.appendChild(favicon);
+
+  // Inject page title prefix if not set
+  if (!document.title) document.title = 'U Curtains Brisbane';
   // Inject HTML
   document.body.insertAdjacentHTML('afterbegin', NAV_HTML);
 
