@@ -647,6 +647,16 @@ footer {
 
   /* Anchor scroll offset for fixed nav */
   [id] { scroll-margin-top: 90px; }
+
+  /* Hero - clean gradient background */
+  .hero {
+    background: linear-gradient(135deg, #F7F4EF 0%, #EDE8DF 40%, #E8E0D4 100%) !important;
+    position: relative;
+  }
+  .hero-inner {
+    position: relative;
+    z-index: 1;
+  }
 </style>
 </head>
 <body>
@@ -655,7 +665,7 @@ footer {
 <script src="/ucurtains/nav.js"></script>
 
 <!-- HERO -->
-<section class="hero" style="background-image:url('hero-bg.jpg');background-size:cover;background-position:center top;">
+<section class="hero">
   <div class="hero-inner">
     <div class="hero-text">
       <div class="fade-up">
