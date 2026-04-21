@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <link rel="icon" type="image/png" href="/ucurtains/favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Curtain & Blind Installation Gallery | Brisbane Projects | U Curtains</title>
-<meta name="description" content="Browse our gallery of completed curtain, blind and shutter installations across Brisbane. See S-Fold curtains, zebra blinds, sheers, shutters and more — all custom-made and installed by U Curtains.">
+<title>Installation Gallery | Curtains, Blinds & Sheers Brisbane | U Curtains</title>
+<meta name="description" content="Browse our gallery of completed curtain, blind, sheer and shutter installations across Brisbane homes. See our real work — all custom-made and professionally installed by U Curtains.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.ucurtains.com.au/gallery">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,19 +16,7 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
 body{font-family:'DM Sans',sans-serif;background:var(--warm-white);color:var(--charcoal);font-size:16px;line-height:1.6;}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(253,251,248,0.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);padding:0 5vw;display:flex;align-items:center;justify-content:space-between;height:70px;}
-.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:var(--charcoal);text-decoration:none;}
-.nav-logo span{color:var(--accent);}
-.nav-links{display:flex;gap:2rem;list-style:none;}
-.nav-links a{text-decoration:none;color:var(--mid);font-size:0.85rem;letter-spacing:0.06em;text-transform:uppercase;transition:color 0.2s;}
-.nav-links a:hover,.nav-links a.active{color:var(--charcoal);}
-.nav-cta{background:var(--charcoal);color:white!important;padding:0.5rem 1.2rem;border-radius:2px;font-size:0.8rem!important;}
-.nav-cta:hover{background:var(--accent)!important;}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;}
-.hamburger span{width:22px;height:1.5px;background:var(--charcoal);display:block;}
-.mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;background:var(--warm-white);border-bottom:1px solid var(--border);padding:1.5rem 5vw;z-index:99;flex-direction:column;gap:1rem;}
-.mobile-menu.open{display:flex;}
-.mobile-menu a{color:var(--charcoal);text-decoration:none;font-size:1rem;padding:0.5rem 0;border-bottom:1px solid var(--border);}
+[id]{scroll-margin-top:90px;}
 
 .page-hero{padding:140px 5vw 60px;background:var(--cream);border-bottom:1px solid var(--border);}
 .page-hero-inner{max-width:1200px;margin:0 auto;}
@@ -39,35 +27,44 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(253,251,248,
 .page-hero h1 em{font-style:italic;color:var(--accent);}
 .page-hero p{font-size:1.05rem;color:var(--mid);max-width:600px;line-height:1.8;}
 
-/* filter tabs */
-.filter-bar{padding:0 5vw;background:white;border-bottom:1px solid var(--border);position:sticky;top:70px;z-index:50;}
-.filter-inner{max-width:1200px;margin:0 auto;display:flex;gap:0;overflow-x:auto;}
+/* Filter tabs */
+.filter-bar{background:white;border-bottom:1px solid var(--border);padding:0 5vw;position:sticky;top:70px;z-index:50;}
+.filter-inner{max-width:1200px;margin:0 auto;display:flex;overflow-x:auto;gap:0;}
 .filter-btn{padding:1rem 1.4rem;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--mid);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;white-space:nowrap;transition:all 0.2s;font-family:'DM Sans',sans-serif;}
 .filter-btn:hover{color:var(--charcoal);}
-.filter-btn.active{color:var(--charcoal);border-bottom-color:var(--gold);}
+.filter-btn.active{color:var(--charcoal);border-bottom-color:var(--gold);font-weight:500;}
 
-/* gallery grid */
-.gallery-section{padding:60px 5vw 90px;}
-.gallery-inner{max-width:1200px;margin:0 auto;}
-.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
-.gallery-item{position:relative;overflow:hidden;border-radius:4px;cursor:pointer;background:var(--border);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;}
-.gallery-item.tall{grid-row:span 2;aspect-ratio:auto;}
-.gallery-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.75rem;background:linear-gradient(135deg,var(--cream) 0%,var(--border) 100%);}
-.gallery-placeholder .emoji{font-size:2.5rem;}
-.gallery-overlay{position:absolute;inset:0;background:rgba(28,28,28,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:1.5rem;}
-.gallery-item:hover .gallery-overlay{background:rgba(28,28,28,0.6);}
-.gallery-caption{color:white;opacity:0;transform:translateY(8px);transition:all 0.3s;}
+/* Category sections */
+.gallery-section{padding:60px 5vw;border-bottom:1px solid var(--border);}
+.gallery-section:last-child{border-bottom:none;}
+.gallery-section:nth-child(even){background:var(--cream);}
+.section-header{max-width:1200px;margin:0 auto 2rem;}
+.section-header h2{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;margin-bottom:0.4rem;}
+.section-header h2 em{font-style:italic;color:var(--accent);}
+.section-header p{font-size:0.88rem;color:var(--light);}
+.photo-count{display:inline-block;font-size:0.72rem;background:var(--accent-light);color:var(--accent);padding:0.2rem 0.6rem;border-radius:20px;margin-left:0.5rem;vertical-align:middle;}
+
+/* Gallery grid */
+.gallery-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;}
+.gallery-item{position:relative;overflow:hidden;border-radius:4px;cursor:pointer;background:var(--border);aspect-ratio:1;}
+.gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s ease;}
+.gallery-item:hover img{transform:scale(1.05);}
+.gallery-overlay{position:absolute;inset:0;background:rgba(28,28,28,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:1rem;}
+.gallery-item:hover .gallery-overlay{background:rgba(28,28,28,0.45);}
+.gallery-caption{color:white;opacity:0;transform:translateY(6px);transition:all 0.3s;font-size:0.82rem;}
 .gallery-item:hover .gallery-caption{opacity:1;transform:translateY(0);}
-.gallery-caption h3{font-size:0.95rem;font-weight:500;margin-bottom:0.2rem;}
-.gallery-caption p{font-size:0.78rem;color:rgba(255,255,255,0.7);}
 
-/* photo notice */
-.photo-notice{background:var(--accent-light);border:1px solid var(--border);border-radius:4px;padding:1.2rem 1.5rem;margin-bottom:2.5rem;display:flex;gap:1rem;align-items:flex-start;}
-.photo-notice p{font-size:0.87rem;color:var(--mid);line-height:1.6;}
-.photo-notice p strong{color:var(--charcoal);}
+/* Lightbox */
+.lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:1000;align-items:center;justify-content:center;}
+.lightbox.open{display:flex;}
+.lightbox img{max-width:90vw;max-height:90vh;object-fit:contain;border-radius:2px;}
+.lightbox-close{position:absolute;top:1.5rem;right:2rem;color:white;font-size:2rem;cursor:pointer;background:none;border:none;line-height:1;}
+.lightbox-prev,.lightbox-next{position:absolute;top:50%;transform:translateY(-50%);color:white;font-size:2rem;cursor:pointer;background:rgba(255,255,255,0.1);border:none;padding:1rem;border-radius:2px;}
+.lightbox-prev{left:1rem;}
+.lightbox-next{right:1rem;}
 
-.cta-banner{background:var(--accent);padding:80px 5vw;text-align:center;}
-.cta-banner h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;color:white;margin-bottom:1rem;}
+.cta-banner{background:var(--accent);padding:70px 5vw;text-align:center;}
+.cta-banner h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:300;color:white;margin-bottom:1rem;}
 .cta-banner p{color:rgba(255,255,255,0.8);margin-bottom:2rem;}
 .btn-white{display:inline-block;background:white;color:var(--accent);padding:0.9rem 2.5rem;text-decoration:none;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;border-radius:2px;transition:all 0.2s;}
 .btn-white:hover{background:var(--charcoal);color:white;}
@@ -85,20 +82,8 @@ footer{background:#111;color:rgba(255,255,255,0.7);padding:60px 5vw 30px;}
 .footer-contact a{color:var(--gold);text-decoration:none;}
 .footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:0.8rem;color:rgba(255,255,255,0.3);}
 
-@media(max-width:900px){
-  .nav-links,.nav-cta{display:none;}
-  .hamburger{display:flex;}
-  .gallery-grid{grid-template-columns:1fr 1fr;}
-  .gallery-item.tall{grid-row:span 1;aspect-ratio:4/3;}
-  .footer-grid{grid-template-columns:1fr 1fr;}
-}
-@media(max-width:600px){
-  .gallery-grid{grid-template-columns:1fr;}
-  .footer-grid{grid-template-columns:1fr;}
-}
-
-  /* Anchor scroll offset for fixed nav */
-  [id] { scroll-margin-top: 90px; }
+@media(max-width:900px){.gallery-grid{grid-template-columns:repeat(3,1fr);}}
+@media(max-width:600px){.gallery-grid{grid-template-columns:repeat(2,1fr);}.footer-grid{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -110,301 +95,161 @@ footer{background:#111;color:rgba(255,255,255,0.7);padding:60px 5vw 30px;}
     <div class="breadcrumb"><a href="/ucurtains/">Home</a> › Gallery</div>
     <span class="section-label">Real Brisbane Installations</span>
     <h1>Our <em>Work</em></h1>
-    <p>Browse our portfolio of completed installations across Brisbane homes. Every project is custom-made and professionally installed by our team — from zebra blinds in Sunnybank to S-Fold curtains in Carindale.</p>
+    <p>Browse our completed installations across Brisbane homes and businesses. Every project is custom-made and professionally installed by our team.</p>
   </div>
 </div>
 
 <div class="filter-bar">
   <div class="filter-inner">
-    <button class="filter-btn active" onclick="filterGallery('all',this)">All (67)</button>
-    <button class="filter-btn" onclick="filterGallery('curtains',this)">Curtains</button>
-    <button class="filter-btn" onclick="filterGallery('blinds',this)">Blinds</button>
-    <button class="filter-btn" onclick="filterGallery('sheers',this)">Sheers</button>
+    <button class="filter-btn active" onclick="filterSection('all',this)">All <span class="photo-count">67</span></button>
+    <button class="filter-btn" onclick="filterSection('sheers',this)">Sheers <span class="photo-count">23</span></button>
+    <button class="filter-btn" onclick="filterSection('sheer-curtain',this)">Sheer &amp; Curtain <span class="photo-count">8</span></button>
+    <button class="filter-btn" onclick="filterSection('blinds',this)">Blinds <span class="photo-count">9</span></button>
+    <button class="filter-btn" onclick="filterSection('shutters',this)">PVC Shutters <span class="photo-count">7</span></button>
+    <button class="filter-btn" onclick="filterSection('void',this)">Void <span class="photo-count">12</span></button>
+    <button class="filter-btn" onclick="filterSection('store',this)">Store Displays <span class="photo-count">8</span></button>
   </div>
 </div>
 
-<section class="gallery-section">
-  <div class="gallery-inner">
-
-    
-
-          <div class="gallery-grid" id="galleryGrid">
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-01.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-02.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-03.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-04.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-05.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-06.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-07.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-08.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-09.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-10.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-11.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-12.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-13.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-14.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-15.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="blinds">
-          <img src="gallery-16.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="blinds">
-          <img src="gallery-17.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="blinds">
-          <img src="gallery-18.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="blinds">
-          <img src="gallery-19.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="blinds">
-          <img src="gallery-20.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="blinds">
-          <img src="gallery-21.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="blinds">
-          <img src="gallery-22.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="blinds">
-          <img src="gallery-23.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="blinds">
-          <img src="gallery-24.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="blinds">
-          <img src="gallery-25.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="sheers">
-          <img src="gallery-26.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="sheers">
-          <img src="gallery-27.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="sheers">
-          <img src="gallery-28.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="sheers">
-          <img src="gallery-29.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="sheers">
-          <img src="gallery-30.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="sheers">
-          <img src="gallery-31.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="sheers">
-          <img src="gallery-32.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-33.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-34.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-35.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-36.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-37.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-38.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-39.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-40.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="blinds">
-          <img src="gallery-41.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="blinds">
-          <img src="gallery-42.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="blinds">
-          <img src="gallery-43.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="blinds">
-          <img src="gallery-44.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="blinds">
-          <img src="gallery-45.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="blinds">
-          <img src="gallery-46.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="blinds">
-          <img src="gallery-47.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="blinds">
-          <img src="gallery-48.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="blinds">
-          <img src="gallery-49.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="blinds">
-          <img src="gallery-50.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-51.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-52.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-53.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-54.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-55.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-56.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-57.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-58.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-59.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-60.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-61.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-62.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-63.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-64.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-65.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-66.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-        <div class="gallery-item" data-cat="curtains">
-          <img src="gallery-67.jpg" alt="Window furnishing installation Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
-          <div class="gallery-overlay"><div class="gallery-caption"><h3>Brisbane Installation</h3><p>U Curtains</p></div></div>
-        </div>
-      </div>
+<!-- SHEERS: g01-g23 -->
+<section class="gallery-section" id="sheers" data-cat="sheers">
+  <div class="section-header">
+    <h2><em>Sheers</em> <span class="photo-count">23 photos</span></h2>
+    <p>Light-filtering sheer curtain installations across Brisbane homes</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-01.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-02.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-03.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-04.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-05.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-06.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-07.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-08.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-09.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-10.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-11.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-12.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-13.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-14.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-15.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-16.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-17.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-18.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-19.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-20.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-21.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-22.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-23.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
   </div>
 </section>
 
+<!-- SHEER & CURTAIN: g24, g41-g44, g46-g47, g51 -->
+<section class="gallery-section" id="sheer-curtain" data-cat="sheer-curtain">
+  <div class="section-header">
+    <h2><em>Sheer &amp; Curtain</em> <span class="photo-count">8 photos</span></h2>
+    <p>Combined sheer and curtain layering installations</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-24.jpg" alt="Sheer and curtain Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheer &amp; Curtain · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-41.jpg" alt="Sheer and curtain Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheer &amp; Curtain · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-42.jpg" alt="Sheer and curtain Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheer &amp; Curtain · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-43.jpg" alt="Sheer and curtain Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheer &amp; Curtain · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-44.jpg" alt="Sheer and curtain Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheer &amp; Curtain · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-46.jpg" alt="Sheer and curtain Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheer &amp; Curtain · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-47.jpg" alt="Sheer and curtain Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheer &amp; Curtain · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-51.jpg" alt="Sheer and curtain Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheer &amp; Curtain · Brisbane</div></div></div>
+  </div>
+</section>
+
+<!-- BLINDS: g25-g33 -->
+<section class="gallery-section" id="blinds" data-cat="blinds">
+  <div class="section-header">
+    <h2><em>Blinds</em> <span class="photo-count">9 photos</span></h2>
+    <p>Zebra, roller and other blind installations across Brisbane</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-25.jpg" alt="Blinds Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Blinds · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-26.jpg" alt="Blinds Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Blinds · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-27.jpg" alt="Blinds Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Blinds · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-28.jpg" alt="Blinds Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Blinds · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-29.jpg" alt="Blinds Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Blinds · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-30.jpg" alt="Blinds Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Blinds · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-31.jpg" alt="Blinds Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Blinds · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-32.jpg" alt="Blinds Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Blinds · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-33.jpg" alt="Blinds Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Blinds · Brisbane</div></div></div>
+  </div>
+</section>
+
+<!-- PVC SHUTTERS: g34-g40 -->
+<section class="gallery-section" id="shutters" data-cat="shutters">
+  <div class="section-header">
+    <h2><em>PVC Shutters</em> <span class="photo-count">7 photos</span></h2>
+    <p>Plantation shutter installations across Brisbane homes</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-34.jpg" alt="PVC shutters Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">PVC Shutters · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-35.jpg" alt="PVC shutters Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">PVC Shutters · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-36.jpg" alt="PVC shutters Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">PVC Shutters · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-37.jpg" alt="PVC shutters Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">PVC Shutters · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-38.jpg" alt="PVC shutters Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">PVC Shutters · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-39.jpg" alt="PVC shutters Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">PVC Shutters · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-40.jpg" alt="PVC shutters Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">PVC Shutters · Brisbane</div></div></div>
+  </div>
+</section>
+
+<!-- VOID: g45, g48-g51, g52, g56-g60 -->
+<section class="gallery-section" id="void" data-cat="void">
+  <div class="section-header">
+    <h2><em>Void</em> <span class="photo-count">12 photos</span></h2>
+    <p>High-ceiling and void space curtain installations</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-45.jpg" alt="Void curtains Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Void · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-48.jpg" alt="Void curtains Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Void · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-49.jpg" alt="Void curtains Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Void · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-50.jpg" alt="Void curtains Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Void · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-51.jpg" alt="Void curtains Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Void · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-52.jpg" alt="Void curtains Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Void · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-56.jpg" alt="Void curtains Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Void · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-57.jpg" alt="Void curtains Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Void · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-58.jpg" alt="Void curtains Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Void · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-59.jpg" alt="Void curtains Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Void · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-60.jpg" alt="Void curtains Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Void · Brisbane</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-46.jpg" alt="Void curtains Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Void · Brisbane</div></div></div>
+  </div>
+</section>
+
+<!-- STORE DISPLAYS: g53-g55, g61-g67 -->
+<section class="gallery-section" id="store" data-cat="store">
+  <div class="section-header">
+    <h2><em>Store Displays</em> <span class="photo-count">8 photos</span></h2>
+    <p>Our showroom and store display installations</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-53.jpg" alt="U Curtains store display" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Store Display</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-54.jpg" alt="U Curtains store display" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Store Display</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-55.jpg" alt="U Curtains store display" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Store Display</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-61.jpg" alt="U Curtains store display" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Store Display</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-62.jpg" alt="U Curtains store display" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Store Display</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-63.jpg" alt="U Curtains store display" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Store Display</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-64.jpg" alt="U Curtains store display" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Store Display</div></div></div>
+    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-65.jpg" alt="U Curtains store display" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Store Display</div></div></div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <button class="lightbox-prev" onclick="lightboxNav(-1,event)">&#8249;</button>
+  <img id="lightboxImg" src="" alt="">
+  <button class="lightbox-next" onclick="lightboxNav(1,event)">&#8250;</button>
+</div>
+
 <div class="cta-banner">
-  <h2>Want to See More of Our Work?</h2>
-  <p>Call us or book a free consultation and we'll show you photos and samples relevant to your home and style.</p>
-  <a href="/ucurtains/contact.html" class="btn-white">Book Free Measure & Quote</a>
+  <h2>Love What You See?</h2>
+  <p>Book a free in-home consultation and we'll bring samples to your Brisbane home.</p>
+  <a href="/ucurtains/contact.html" class="btn-white">Book Free Measure &amp; Quote</a>
   <div style="margin-top:1.5rem;"><a href="tel:0434840889" style="color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.9rem;">or call <strong style="color:white;">0434 840 889</strong></a></div>
 </div>
 
@@ -412,29 +257,24 @@ footer{background:#111;color:rgba(255,255,255,0.7);padding:60px 5vw 30px;}
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="/ucurtains/" class="nav-logo" style="color:white;">U <span style="color:var(--gold)">Curtains</span></a>
+        <a href="/ucurtains/" class="nav-logo" style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:white;text-decoration:none;">U <span style="color:var(--gold)">Curtains</span></a>
         <p>Brisbane's family-owned custom window furnishing specialists. Curtains, blinds, sheers and shutters — made to measure, professionally installed.</p>
         <p style="margin-top:1rem;">ABN: 68664245005</p>
       </div>
-      <div class="footer-col">
-        <h4>Products</h4>
-        <ul>
-          <li><a href="/ucurtains/curtains.html">Curtains</a></li>
-          <li><a href="/ucurtains/sheers.html">Sheers</a></li>
-          <li><a href="/ucurtains/blinds.html">Blinds</a></li>
-          <li><a href="/ucurtains/shutters.html">Shutters</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="/ucurtains/about.html">About Us</a></li>
-          <li><a href="/ucurtains/gallery.html">Gallery</a></li>
-          <li><a href="/ucurtains/contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col footer-contact">
-        <h4>Contact</h4>
+      <div class="footer-col"><h4>Products</h4><ul>
+        <li><a href="/ucurtains/curtains.html">Curtains</a></li>
+        <li><a href="/ucurtains/sheers.html">Sheers</a></li>
+        <li><a href="/ucurtains/blinds.html">Blinds</a></li>
+        <li><a href="/ucurtains/shutters.html">Shutters</a></li>
+        <li><a href="/ucurtains/accessories.html">Accessories</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Company</h4><ul>
+        <li><a href="/ucurtains/about.html">About Us</a></li>
+        <li><a href="/ucurtains/gallery.html">Gallery</a></li>
+        <li><a href="/ucurtains/support.html">Customer Support</a></li>
+        <li><a href="/ucurtains/contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-col footer-contact"><h4>Contact</h4>
         <p>📞 <a href="tel:0434840889">0434 840 889</a></p>
         <p>✉ <a href="mailto:sale@ucurtains.com.au">sale@ucurtains.com.au</a></p>
         <p>📍 2/1362 Beaudesert Road<br>Acacia Ridge QLD 4110</p>
@@ -448,20 +288,57 @@ footer{background:#111;color:rgba(255,255,255,0.7);padding:60px 5vw 30px;}
 </footer>
 
 <script>
-function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
-document.addEventListener('click',function(e){const m=document.getElementById('mobileMenu');const h=document.querySelector('.hamburger');if(!m.contains(e.target)&&!h.contains(e.target))m.classList.remove('open');});
-
-function filterGallery(cat, btn) {
+// Filter by section visibility
+function filterSection(cat, btn) {
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
-  document.querySelectorAll('.gallery-item').forEach(item => {
-    if(cat === 'all' || item.dataset.cat === cat) {
-      item.style.display = 'flex';
+  document.querySelectorAll('.gallery-section').forEach(sec => {
+    if (cat === 'all' || sec.dataset.cat === cat) {
+      sec.style.display = '';
     } else {
-      item.style.display = 'none';
+      sec.style.display = 'none';
     }
   });
+  // Scroll to first visible section
+  if (cat !== 'all') {
+    const sec = document.querySelector(`[data-cat="${cat}"]`);
+    if (sec) setTimeout(() => sec.scrollIntoView({behavior:'smooth', block:'start'}), 100);
+  } else {
+    window.scrollTo({top: document.querySelector('.filter-bar').offsetTop - 70, behavior:'smooth'});
+  }
 }
+
+// Lightbox
+let allImgs = [], currentIdx = 0;
+function buildImgList() {
+  allImgs = Array.from(document.querySelectorAll('.gallery-section:not([style*="none"]) .gallery-item img'));
+}
+function openLightbox(el) {
+  buildImgList();
+  const img = el.querySelector('img');
+  currentIdx = allImgs.indexOf(img);
+  document.getElementById('lightboxImg').src = img.src;
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox(e) {
+  if (!e || e.target === document.getElementById('lightbox') || e.target.classList.contains('lightbox-close')) {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+}
+function lightboxNav(dir, e) {
+  e.stopPropagation();
+  currentIdx = (currentIdx + dir + allImgs.length) % allImgs.length;
+  document.getElementById('lightboxImg').src = allImgs[currentIdx].src;
+}
+document.addEventListener('keydown', e => {
+  const lb = document.getElementById('lightbox');
+  if (!lb.classList.contains('open')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowRight') lightboxNav(1, {stopPropagation:()=>{}});
+  if (e.key === 'ArrowLeft') lightboxNav(-1, {stopPropagation:()=>{}});
+});
 </script>
 </body>
 </html>
