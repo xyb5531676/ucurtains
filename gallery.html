@@ -5,261 +5,639 @@
 <link rel="icon" type="image/png" href="/ucurtains/favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Installation Gallery | Curtains, Blinds & Sheers Brisbane | U Curtains</title>
-<meta name="description" content="Browse our gallery of completed curtain, blind, sheer and shutter installations across Brisbane homes. See our real work — all custom-made and professionally installed by U Curtains.">
+<meta name="description" content="Browse our gallery of completed curtain, blind, sheer and shutter installations across Brisbane homes. Real work, real results — all custom-made and professionally installed by U Curtains.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.ucurtains.com.au/gallery">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--cream:#F7F4EF;--warm-white:#FDFBF8;--charcoal:#1C1C1C;--mid:#5A5A5A;--light:#9A9A9A;--border:#E2DDD6;--accent:#8B6F47;--accent-light:#F0E8DC;--gold:#C9A96E;}
+:root{--navy:#1a4a5e;--orange:#e07b3c;--gold:#f0c89a;--cream:#fdf8f2;--border:#ede9e2;--mid:#5a6a72;--light:#8a9ea8;--navy-dark:#0f2f3d;}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
-body{font-family:'DM Sans',sans-serif;background:var(--warm-white);color:var(--charcoal);font-size:16px;line-height:1.6;}
+body{font-family:'Nunito',sans-serif;color:#2d2d2d;background:#fff;padding-top:70px;}
 [id]{scroll-margin-top:90px;}
-
-.page-hero{padding:140px 5vw 60px;background:var(--cream);border-bottom:1px solid var(--border);}
+.page-hero{padding:80px 5vw 60px;background:linear-gradient(135deg,#e8f4f8 0%,#fdf6ee 60%,#fef9f5 100%);border-bottom:1px solid var(--border);}
 .page-hero-inner{max-width:1200px;margin:0 auto;}
 .breadcrumb{font-size:0.8rem;color:var(--light);margin-bottom:1rem;}
 .breadcrumb a{color:var(--light);text-decoration:none;}
-.section-label{font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem;display:block;}
-.page-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,4vw,3.5rem);font-weight:300;line-height:1.15;margin-bottom:1rem;}
-.page-hero h1 em{font-style:italic;color:var(--accent);}
-.page-hero p{font-size:1.05rem;color:var(--mid);max-width:600px;line-height:1.8;}
-
-/* Filter tabs */
-.filter-bar{background:white;border-bottom:1px solid var(--border);padding:0 5vw;position:sticky;top:70px;z-index:50;}
-.filter-inner{max-width:1200px;margin:0 auto;display:flex;overflow-x:auto;gap:0;}
-.filter-btn{padding:1rem 1.4rem;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--mid);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;white-space:nowrap;transition:all 0.2s;font-family:'DM Sans',sans-serif;}
-.filter-btn:hover{color:var(--charcoal);}
-.filter-btn.active{color:var(--charcoal);border-bottom-color:var(--gold);font-weight:500;}
-
-/* Category sections */
-.gallery-section{padding:60px 5vw;border-bottom:1px solid var(--border);}
-.gallery-section:last-child{border-bottom:none;}
-.gallery-section:nth-child(even){background:var(--cream);}
-.section-header{max-width:1200px;margin:0 auto 2rem;}
-.section-header h2{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;margin-bottom:0.4rem;}
-.section-header h2 em{font-style:italic;color:var(--accent);}
-.section-header p{font-size:0.88rem;color:var(--light);}
-.photo-count{display:inline-block;font-size:0.72rem;background:var(--accent-light);color:var(--accent);padding:0.2rem 0.6rem;border-radius:20px;margin-left:0.5rem;vertical-align:middle;}
-
-/* Gallery grid */
-.gallery-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;}
-.gallery-item{position:relative;overflow:hidden;border-radius:4px;cursor:pointer;background:var(--border);aspect-ratio:1;}
-.gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s ease;}
-.gallery-item:hover img{transform:scale(1.05);}
-.gallery-overlay{position:absolute;inset:0;background:rgba(28,28,28,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:1rem;}
-.gallery-item:hover .gallery-overlay{background:rgba(28,28,28,0.45);}
-.gallery-caption{color:white;opacity:0;transform:translateY(6px);transition:all 0.3s;font-size:0.82rem;}
-.gallery-item:hover .gallery-caption{opacity:1;transform:translateY(0);}
-
-/* Lightbox */
-.lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:1000;align-items:center;justify-content:center;}
-.lightbox.open{display:flex;}
-.lightbox img{max-width:90vw;max-height:90vh;object-fit:contain;border-radius:2px;}
-.lightbox-close{position:absolute;top:1.5rem;right:2rem;color:white;font-size:2rem;cursor:pointer;background:none;border:none;line-height:1;}
-.lightbox-prev,.lightbox-next{position:absolute;top:50%;transform:translateY(-50%);color:white;font-size:2rem;cursor:pointer;background:rgba(255,255,255,0.1);border:none;padding:1rem;border-radius:2px;}
-.lightbox-prev{left:1rem;}
-.lightbox-next{right:1rem;}
-
-.cta-banner{background:var(--accent);padding:70px 5vw;text-align:center;}
-.cta-banner h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:300;color:white;margin-bottom:1rem;}
-.cta-banner p{color:rgba(255,255,255,0.8);margin-bottom:2rem;}
-.btn-white{display:inline-block;background:white;color:var(--accent);padding:0.9rem 2.5rem;text-decoration:none;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;border-radius:2px;transition:all 0.2s;}
-.btn-white:hover{background:var(--charcoal);color:white;}
-
-footer{background:#111;color:rgba(255,255,255,0.7);padding:60px 5vw 30px;}
+.breadcrumb a:hover{color:var(--orange);}
+.eyebrow{font-size:0.72rem;color:var(--orange);font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:0.5rem;display:block;}
+.page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;line-height:1.2;color:var(--navy);margin-bottom:1rem;}
+.page-hero h1 em{font-style:italic;color:var(--orange);}
+.page-hero p{font-size:1rem;color:var(--mid);max-width:600px;line-height:1.8;margin-bottom:2rem;}
+.btn-primary{display:inline-block;background:var(--orange);color:white;padding:0.8rem 2rem;border-radius:25px;text-decoration:none;font-size:0.88rem;font-weight:700;transition:background 0.2s;box-shadow:0 4px 14px rgba(224,123,60,0.3);}
+.btn-primary:hover{background:#c96a2a;}
+.btn-outline{display:inline-block;border:2px solid var(--navy);color:var(--navy);padding:0.8rem 2rem;border-radius:25px;text-decoration:none;font-size:0.88rem;font-weight:700;transition:all 0.2s;}
+.btn-outline:hover{background:var(--navy);color:white;}
+.btn-sm{display:inline-block;background:var(--orange);color:white;padding:0.55rem 1.4rem;border-radius:20px;text-decoration:none;font-size:0.82rem;font-weight:700;transition:background 0.2s;}
+.btn-sm:hover{background:#c96a2a;}
+.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap;}
+.quick-nav{background:white;border-bottom:1px solid var(--border);padding:0 5vw;position:sticky;top:70px;z-index:50;}
+.quick-nav-inner{max-width:1200px;margin:0 auto;display:flex;overflow-x:auto;}
+.quick-nav a{padding:1rem 1.25rem;font-size:0.8rem;font-weight:600;color:var(--mid);text-decoration:none;white-space:nowrap;border-bottom:3px solid transparent;transition:all 0.2s;}
+.quick-nav a:hover{color:var(--navy);border-bottom-color:var(--orange);}
+.product-section{padding:80px 5vw;border-bottom:1px solid var(--border);}
+.product-section:nth-child(even){background:var(--cream);}
+.product-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+.product-section:nth-child(even) .product-inner{direction:rtl;}
+.product-section:nth-child(even) .product-inner>*{direction:ltr;}
+.product-visual{aspect-ratio:4/3;background:var(--border);border-radius:16px;overflow:hidden;position:relative;}
+.product-visual img{width:100%;height:100%;object-fit:cover;display:block;}
+.product-visual-label{position:absolute;bottom:1rem;left:1rem;background:rgba(26,74,94,0.85);color:white;font-size:0.72rem;padding:0.3rem 0.8rem;border-radius:20px;letter-spacing:0.06em;text-transform:uppercase;font-weight:600;}
+.product-info .tagline{font-size:0.72rem;color:var(--orange);font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:0.4rem;display:block;}
+.product-info h2{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--navy);margin-bottom:1rem;}
+.product-info h2 em{font-style:italic;color:var(--orange);}
+.product-info p{color:var(--mid);line-height:1.8;margin-bottom:1.2rem;font-size:0.95rem;}
+.feature-list{list-style:none;display:flex;flex-direction:column;gap:0.5rem;margin-bottom:1.8rem;}
+.feature-list li{display:flex;align-items:flex-start;gap:0.6rem;font-size:0.9rem;color:var(--mid);}
+.feature-list li::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--orange);flex-shrink:0;margin-top:6px;}
+.ideal-for{display:flex;flex-wrap:wrap;gap:0.4rem;margin-bottom:1.8rem;}
+.ideal-tag{font-size:0.72rem;padding:0.25rem 0.75rem;background:#e8f4f8;color:var(--navy);border-radius:20px;font-weight:600;}
+.cta-banner{background:linear-gradient(135deg,var(--navy) 0%,#1e5a72 100%);padding:80px 5vw;text-align:center;}
+.cta-banner h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;color:white;margin-bottom:1rem;}
+.cta-banner p{color:rgba(255,255,255,0.75);margin-bottom:2rem;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.7;}
+.btn-white{display:inline-block;background:var(--orange);color:white;padding:0.9rem 2.5rem;text-decoration:none;font-size:0.88rem;font-weight:700;border-radius:25px;transition:all 0.2s;box-shadow:0 4px 14px rgba(224,123,60,0.4);}
+.btn-white:hover{background:#c96a2a;}
+footer{background:var(--navy-dark);color:rgba(255,255,255,0.7);padding:60px 5vw 30px;}
 .footer-inner{max-width:1200px;margin:0 auto;}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,0.1);margin-bottom:2rem;}
-.footer-brand p{font-size:0.85rem;line-height:1.7;color:rgba(255,255,255,0.5);margin-top:1rem;}
-.footer-col h4{font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:white;margin-bottom:1rem;}
+.footer-logo-name{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gold);font-weight:700;margin-bottom:0.5rem;}
+.footer-brand p{font-size:0.82rem;line-height:1.7;color:rgba(255,255,255,0.5);}
+.footer-col h4{font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:1rem;font-weight:700;}
 .footer-col ul{list-style:none;}
 .footer-col li{margin-bottom:0.5rem;}
-.footer-col a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.875rem;transition:color 0.2s;}
+.footer-col a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:0.85rem;transition:color 0.2s;font-weight:500;}
 .footer-col a:hover{color:var(--gold);}
-.footer-contact p{font-size:0.875rem;color:rgba(255,255,255,0.5);margin-bottom:0.5rem;}
+.footer-contact p{font-size:0.85rem;color:rgba(255,255,255,0.55);margin-bottom:0.6rem;font-weight:500;}
 .footer-contact a{color:var(--gold);text-decoration:none;}
-.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:0.8rem;color:rgba(255,255,255,0.3);}
-
-@media(max-width:900px){.gallery-grid{grid-template-columns:repeat(3,1fr);}}
-@media(max-width:600px){.gallery-grid{grid-template-columns:repeat(2,1fr);}.footer-grid{grid-template-columns:1fr;}}
+.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:0.78rem;color:rgba(255,255,255,0.3);}
+@media(max-width:900px){.product-inner{grid-template-columns:1fr;gap:2rem;}.product-section:nth-child(even) .product-inner{direction:ltr;}.footer-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.footer-grid{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
-
 <script src="/ucurtains/nav.js"></script>
-
 <div class="page-hero">
   <div class="page-hero-inner">
     <div class="breadcrumb"><a href="/ucurtains/">Home</a> › Gallery</div>
-    <span class="section-label">Real Brisbane Installations</span>
+    <span class="eyebrow">Real Brisbane Installations</span>
     <h1>Our <em>Work</em></h1>
     <p>Browse our completed installations across Brisbane homes and businesses. Every project is custom-made and professionally installed by our team.</p>
   </div>
 </div>
 
-<div class="filter-bar">
-  <div class="filter-inner">
-    <button class="filter-btn active" onclick="filterSection('all',this)">All <span class="photo-count">67</span></button>
-    <button class="filter-btn" onclick="filterSection('sheers',this)">Sheers <span class="photo-count">23</span></button>
-    <button class="filter-btn" onclick="filterSection('sheer-curtain',this)">Sheer &amp; Curtain <span class="photo-count">8</span></button>
-    <button class="filter-btn" onclick="filterSection('blinds',this)">Blinds <span class="photo-count">9</span></button>
-    <button class="filter-btn" onclick="filterSection('shutters',this)">PVC Shutters <span class="photo-count">7</span></button>
-    <button class="filter-btn" onclick="filterSection('void',this)">Void <span class="photo-count">12</span></button>
-    <button class="filter-btn" onclick="filterSection('store',this)">Store Displays <span class="photo-count">8</span></button>
+<!-- FILTER BAR -->
+<div style="background:white;border-bottom:1px solid var(--border);padding:0 5vw;position:sticky;top:70px;z-index:50;">
+  <div style="max-width:1200px;margin:0 auto;display:flex;overflow-x:auto;gap:0;">
+    <button class="gf-btn active" onclick="filterGallery('all',this)" style="padding:1rem 1.4rem;font-size:0.8rem;font-weight:700;color:var(--navy);background:none;border:none;border-bottom:3px solid var(--orange);cursor:pointer;white-space:nowrap;font-family:'Nunito',sans-serif;">All <span style="background:#e8f4f8;color:var(--navy);font-size:0.68rem;padding:0.15rem 0.5rem;border-radius:20px;margin-left:0.3rem;font-weight:700;">67</span></button>
+    <button class="gf-btn" onclick="filterGallery('sheers',this)" style="padding:1rem 1.4rem;font-size:0.8rem;font-weight:600;color:var(--mid);background:none;border:none;border-bottom:3px solid transparent;cursor:pointer;white-space:nowrap;font-family:'Nunito',sans-serif;">Sheers <span style="background:#f0f0f0;color:var(--mid);font-size:0.68rem;padding:0.15rem 0.5rem;border-radius:20px;margin-left:0.3rem;">23</span></button>
+    <button class="gf-btn" onclick="filterGallery('sheer-curtain',this)" style="padding:1rem 1.4rem;font-size:0.8rem;font-weight:600;color:var(--mid);background:none;border:none;border-bottom:3px solid transparent;cursor:pointer;white-space:nowrap;font-family:'Nunito',sans-serif;">Sheer &amp; Curtain <span style="background:#f0f0f0;color:var(--mid);font-size:0.68rem;padding:0.15rem 0.5rem;border-radius:20px;margin-left:0.3rem;">8</span></button>
+    <button class="gf-btn" onclick="filterGallery('blinds',this)" style="padding:1rem 1.4rem;font-size:0.8rem;font-weight:600;color:var(--mid);background:none;border:none;border-bottom:3px solid transparent;cursor:pointer;white-space:nowrap;font-family:'Nunito',sans-serif;">Blinds <span style="background:#f0f0f0;color:var(--mid);font-size:0.68rem;padding:0.15rem 0.5rem;border-radius:20px;margin-left:0.3rem;">9</span></button>
+    <button class="gf-btn" onclick="filterGallery('shutters',this)" style="padding:1rem 1.4rem;font-size:0.8rem;font-weight:600;color:var(--mid);background:none;border:none;border-bottom:3px solid transparent;cursor:pointer;white-space:nowrap;font-family:'Nunito',sans-serif;">PVC Shutters <span style="background:#f0f0f0;color:var(--mid);font-size:0.68rem;padding:0.15rem 0.5rem;border-radius:20px;margin-left:0.3rem;">7</span></button>
+    <button class="gf-btn" onclick="filterGallery('void',this)" style="padding:1rem 1.4rem;font-size:0.8rem;font-weight:600;color:var(--mid);background:none;border:none;border-bottom:3px solid transparent;cursor:pointer;white-space:nowrap;font-family:'Nunito',sans-serif;">Void <span style="background:#f0f0f0;color:var(--mid);font-size:0.68rem;padding:0.15rem 0.5rem;border-radius:20px;margin-left:0.3rem;">12</span></button>
+    <button class="gf-btn" onclick="filterGallery('store',this)" style="padding:1rem 1.4rem;font-size:0.8rem;font-weight:600;color:var(--mid);background:none;border:none;border-bottom:3px solid transparent;cursor:pointer;white-space:nowrap;font-family:'Nunito',sans-serif;">Store Displays <span style="background:#f0f0f0;color:var(--mid);font-size:0.68rem;padding:0.15rem 0.5rem;border-radius:20px;margin-left:0.3rem;">8</span></button>
   </div>
 </div>
 
-<!-- SHEERS: g01-g23 -->
-<section class="gallery-section" id="sheers" data-cat="sheers">
-  <div class="section-header">
-    <h2><em>Sheers</em> <span class="photo-count">23 photos</span></h2>
-    <p>Light-filtering sheer curtain installations across Brisbane homes</p>
-  </div>
-  <div class="gallery-grid">
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-01.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-02.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-03.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-04.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-05.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-06.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-07.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-08.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-09.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-10.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-11.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-12.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-13.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-14.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-15.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-16.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-17.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-18.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-19.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-20.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-21.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-22.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-23.jpg" alt="Sheer curtains Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheers · Brisbane</div></div></div>
+<section data-cat="sheers" style="padding:60px 5vw;border-bottom:1px solid var(--border);">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div style="margin-bottom:2rem;">
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--navy);">Sheers <span style="font-size:0.78rem;background:#e8f4f8;color:var(--navy);padding:0.2rem 0.7rem;border-radius:20px;font-weight:700;vertical-align:middle;margin-left:0.5rem;">23 photos</span></h2>
+      <p style="font-size:0.85rem;color:var(--light);margin-top:0.3rem;">Light-filtering sheer curtain installations across Brisbane homes</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;">
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-01.jpg" alt="Sheer curtains Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheers · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-02.jpg" alt="Sheer curtains Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheers · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-03.jpg" alt="Sheer curtains Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheers · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-04.jpg" alt="Sheer curtains Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheers · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-05.jpg" alt="Sheer curtains Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheers · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-06.jpg" alt="Sheer curtains Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheers · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-07.jpg" alt="Sheer curtains Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheers · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-08.jpg" alt="Sheer curtains Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheers · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-09.jpg" alt="Sheer curtains Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheers · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-10.jpg" alt="Sheer curtains Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheers · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-11.jpg" alt="Sheer curtains Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheers · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-12.jpg" alt="Sheer curtains Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheers · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-13.jpg" alt="Sheer curtains Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheers · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-14.jpg" alt="Sheer curtains Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheers · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-15.jpg" alt="Sheer curtains Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheers · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-16.jpg" alt="Sheer curtains Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheers · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-17.jpg" alt="Sheer curtains Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheers · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-18.jpg" alt="Sheer curtains Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheers · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-19.jpg" alt="Sheer curtains Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheers · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-20.jpg" alt="Sheer curtains Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheers · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-21.jpg" alt="Sheer curtains Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheers · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-22.jpg" alt="Sheer curtains Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheers · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-23.jpg" alt="Sheer curtains Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheers · Brisbane</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- SHEER & CURTAIN: g24, g41-g44, g46-g47, g51 -->
-<section class="gallery-section" id="sheer-curtain" data-cat="sheer-curtain">
-  <div class="section-header">
-    <h2><em>Sheer &amp; Curtain</em> <span class="photo-count">8 photos</span></h2>
-    <p>Combined sheer and curtain layering installations</p>
-  </div>
-  <div class="gallery-grid">
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-24.jpg" alt="Sheer and curtain Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheer &amp; Curtain · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-41.jpg" alt="Sheer and curtain Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheer &amp; Curtain · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-42.jpg" alt="Sheer and curtain Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheer &amp; Curtain · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-43.jpg" alt="Sheer and curtain Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheer &amp; Curtain · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-44.jpg" alt="Sheer and curtain Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheer &amp; Curtain · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-46.jpg" alt="Sheer and curtain Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheer &amp; Curtain · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-47.jpg" alt="Sheer and curtain Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheer &amp; Curtain · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-51.jpg" alt="Sheer and curtain Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Sheer &amp; Curtain · Brisbane</div></div></div>
-  </div>
-</section>
-
-<!-- BLINDS: g25-g33 -->
-<section class="gallery-section" id="blinds" data-cat="blinds">
-  <div class="section-header">
-    <h2><em>Blinds</em> <span class="photo-count">9 photos</span></h2>
-    <p>Zebra, roller and other blind installations across Brisbane</p>
-  </div>
-  <div class="gallery-grid">
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-25.jpg" alt="Blinds Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Blinds · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-26.jpg" alt="Blinds Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Blinds · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-27.jpg" alt="Blinds Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Blinds · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-28.jpg" alt="Blinds Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Blinds · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-29.jpg" alt="Blinds Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Blinds · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-30.jpg" alt="Blinds Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Blinds · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-31.jpg" alt="Blinds Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Blinds · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-32.jpg" alt="Blinds Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Blinds · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-33.jpg" alt="Blinds Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Blinds · Brisbane</div></div></div>
-  </div>
-</section>
-
-<!-- PVC SHUTTERS: g34-g40 -->
-<section class="gallery-section" id="shutters" data-cat="shutters">
-  <div class="section-header">
-    <h2><em>PVC Shutters</em> <span class="photo-count">7 photos</span></h2>
-    <p>Plantation shutter installations across Brisbane homes</p>
-  </div>
-  <div class="gallery-grid">
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-34.jpg" alt="PVC shutters Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">PVC Shutters · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-35.jpg" alt="PVC shutters Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">PVC Shutters · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-36.jpg" alt="PVC shutters Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">PVC Shutters · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-37.jpg" alt="PVC shutters Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">PVC Shutters · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-38.jpg" alt="PVC shutters Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">PVC Shutters · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-39.jpg" alt="PVC shutters Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">PVC Shutters · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-40.jpg" alt="PVC shutters Brisbane installation" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">PVC Shutters · Brisbane</div></div></div>
-  </div>
-</section>
-
-<!-- VOID: g45, g48-g51, g52, g56-g60 -->
-<section class="gallery-section" id="void" data-cat="void">
-  <div class="section-header">
-    <h2><em>Void</em> <span class="photo-count">12 photos</span></h2>
-    <p>High-ceiling and void space curtain installations</p>
-  </div>
-  <div class="gallery-grid">
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-45.jpg" alt="Void curtains Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Void · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-48.jpg" alt="Void curtains Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Void · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-49.jpg" alt="Void curtains Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Void · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-50.jpg" alt="Void curtains Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Void · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-51.jpg" alt="Void curtains Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Void · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-52.jpg" alt="Void curtains Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Void · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-56.jpg" alt="Void curtains Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Void · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-57.jpg" alt="Void curtains Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Void · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-58.jpg" alt="Void curtains Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Void · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-59.jpg" alt="Void curtains Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Void · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-60.jpg" alt="Void curtains Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Void · Brisbane</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-46.jpg" alt="Void curtains Brisbane" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Void · Brisbane</div></div></div>
+<section data-cat="sheer-curtain" style="padding:60px 5vw;border-bottom:1px solid var(--border);background:var(--cream);">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div style="margin-bottom:2rem;">
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--navy);">Sheer &amp; Curtain <span style="font-size:0.78rem;background:#e8f4f8;color:var(--navy);padding:0.2rem 0.7rem;border-radius:20px;font-weight:700;vertical-align:middle;margin-left:0.5rem;">8 photos</span></h2>
+      <p style="font-size:0.85rem;color:var(--light);margin-top:0.3rem;">Combined sheer and curtain layering installations</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;">
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-24.jpg" alt="Sheer and curtain Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheer &amp; Curtain · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-41.jpg" alt="Sheer and curtain Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheer &amp; Curtain · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-42.jpg" alt="Sheer and curtain Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheer &amp; Curtain · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-43.jpg" alt="Sheer and curtain Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheer &amp; Curtain · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-44.jpg" alt="Sheer and curtain Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheer &amp; Curtain · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-46.jpg" alt="Sheer and curtain Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheer &amp; Curtain · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-47.jpg" alt="Sheer and curtain Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheer &amp; Curtain · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-51.jpg" alt="Sheer and curtain Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Sheer &amp; Curtain · Brisbane</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- STORE DISPLAYS: g53-g55, g61-g67 -->
-<section class="gallery-section" id="store" data-cat="store">
-  <div class="section-header">
-    <h2><em>Store Displays</em> <span class="photo-count">8 photos</span></h2>
-    <p>Our showroom and store display installations</p>
-  </div>
-  <div class="gallery-grid">
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-53.jpg" alt="U Curtains store display" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Store Display</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-54.jpg" alt="U Curtains store display" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Store Display</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-55.jpg" alt="U Curtains store display" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Store Display</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-61.jpg" alt="U Curtains store display" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Store Display</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-62.jpg" alt="U Curtains store display" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Store Display</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-63.jpg" alt="U Curtains store display" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Store Display</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-64.jpg" alt="U Curtains store display" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Store Display</div></div></div>
-    <div class="gallery-item" onclick="openLightbox(this)"><img src="gallery-65.jpg" alt="U Curtains store display" loading="lazy"><div class="gallery-overlay"><div class="gallery-caption">Store Display</div></div></div>
+<section data-cat="blinds" style="padding:60px 5vw;border-bottom:1px solid var(--border);">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div style="margin-bottom:2rem;">
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--navy);">Blinds <span style="font-size:0.78rem;background:#e8f4f8;color:var(--navy);padding:0.2rem 0.7rem;border-radius:20px;font-weight:700;vertical-align:middle;margin-left:0.5rem;">9 photos</span></h2>
+      <p style="font-size:0.85rem;color:var(--light);margin-top:0.3rem;">Zebra, roller and blind installations across Brisbane</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;">
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-25.jpg" alt="Blinds Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Blinds · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-26.jpg" alt="Blinds Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Blinds · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-27.jpg" alt="Blinds Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Blinds · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-28.jpg" alt="Blinds Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Blinds · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-29.jpg" alt="Blinds Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Blinds · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-30.jpg" alt="Blinds Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Blinds · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-31.jpg" alt="Blinds Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Blinds · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-32.jpg" alt="Blinds Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Blinds · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-33.jpg" alt="Blinds Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Blinds · Brisbane</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- Lightbox -->
-<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
-  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
-  <button class="lightbox-prev" onclick="lightboxNav(-1,event)">&#8249;</button>
-  <img id="lightboxImg" src="" alt="">
-  <button class="lightbox-next" onclick="lightboxNav(1,event)">&#8250;</button>
+<section data-cat="shutters" style="padding:60px 5vw;border-bottom:1px solid var(--border);background:var(--cream);">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div style="margin-bottom:2rem;">
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--navy);">PVC Shutters <span style="font-size:0.78rem;background:#e8f4f8;color:var(--navy);padding:0.2rem 0.7rem;border-radius:20px;font-weight:700;vertical-align:middle;margin-left:0.5rem;">7 photos</span></h2>
+      <p style="font-size:0.85rem;color:var(--light);margin-top:0.3rem;">Plantation shutter installations across Brisbane homes</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;">
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-34.jpg" alt="PVC shutters Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">PVC Shutters · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-35.jpg" alt="PVC shutters Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">PVC Shutters · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-36.jpg" alt="PVC shutters Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">PVC Shutters · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-37.jpg" alt="PVC shutters Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">PVC Shutters · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-38.jpg" alt="PVC shutters Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">PVC Shutters · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-39.jpg" alt="PVC shutters Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">PVC Shutters · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-40.jpg" alt="PVC shutters Brisbane installation - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">PVC Shutters · Brisbane</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-cat="void" style="padding:60px 5vw;border-bottom:1px solid var(--border);">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div style="margin-bottom:2rem;">
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--navy);">Void <span style="font-size:0.78rem;background:#e8f4f8;color:var(--navy);padding:0.2rem 0.7rem;border-radius:20px;font-weight:700;vertical-align:middle;margin-left:0.5rem;">12 photos</span></h2>
+      <p style="font-size:0.85rem;color:var(--light);margin-top:0.3rem;">High-ceiling and void space curtain installations</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;">
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-45.jpg" alt="Void curtains Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Void · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-48.jpg" alt="Void curtains Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Void · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-49.jpg" alt="Void curtains Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Void · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-50.jpg" alt="Void curtains Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Void · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-51.jpg" alt="Void curtains Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Void · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-52.jpg" alt="Void curtains Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Void · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-46.jpg" alt="Void curtains Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Void · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-56.jpg" alt="Void curtains Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Void · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-57.jpg" alt="Void curtains Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Void · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-58.jpg" alt="Void curtains Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Void · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-59.jpg" alt="Void curtains Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Void · Brisbane</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-60.jpg" alt="Void curtains Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Void · Brisbane</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-cat="store" style="padding:60px 5vw;border-bottom:1px solid var(--border);background:var(--cream);">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div style="margin-bottom:2rem;">
+      <h2 style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--navy);">Store Displays <span style="font-size:0.78rem;background:#e8f4f8;color:var(--navy);padding:0.2rem 0.7rem;border-radius:20px;font-weight:700;vertical-align:middle;margin-left:0.5rem;">8 photos</span></h2>
+      <p style="font-size:0.85rem;color:var(--light);margin-top:0.3rem;">Our showroom and store display installations</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;">
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-53.jpg" alt="U Curtains store display - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Store Display</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-54.jpg" alt="U Curtains store display - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Store Display</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-55.jpg" alt="U Curtains store display - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Store Display</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-61.jpg" alt="U Curtains store display - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Store Display</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-62.jpg" alt="U Curtains store display - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Store Display</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-63.jpg" alt="U Curtains store display - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Store Display</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-64.jpg" alt="U Curtains store display - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Store Display</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:14px;cursor:pointer;background:var(--border);aspect-ratio:1;" onclick="openLightbox(this)">
+        <img src="/ucurtains/gallery-65.jpg" alt="U Curtains store display - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+        <div style="position:absolute;inset:0;background:rgba(26,74,94,0);transition:background 0.3s;display:flex;align-items:flex-end;padding:0.75rem;" onmouseover="this.style.background='rgba(26,74,94,0.5)'" onmouseout="this.style.background='rgba(26,74,94,0)'">
+          <span style="color:white;font-size:0.78rem;font-weight:600;opacity:0;transition:opacity 0.3s;" class="gal-cap">Store Display</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:2000;align-items:center;justify-content:center;" onclick="closeLightbox(event)">
+  <button onclick="closeLightbox()" style="position:absolute;top:1.5rem;right:2rem;color:white;font-size:2.2rem;cursor:pointer;background:none;border:none;line-height:1;">×</button>
+  <button onclick="lightboxNav(-1,event)" style="position:absolute;left:1rem;top:50%;transform:translateY(-50%);color:white;font-size:2rem;cursor:pointer;background:rgba(255,255,255,0.1);border:none;padding:1rem;border-radius:10px;">‹</button>
+  <img id="lightboxImg" src="" alt="" style="max-width:90vw;max-height:90vh;object-fit:contain;border-radius:8px;">
+  <button onclick="lightboxNav(1,event)" style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);color:white;font-size:2rem;cursor:pointer;background:rgba(255,255,255,0.1);border:none;padding:1rem;border-radius:10px;">›</button>
 </div>
 
 <div class="cta-banner">
   <h2>Love What You See?</h2>
   <p>Book a free in-home consultation and we'll bring samples to your Brisbane home.</p>
   <a href="/ucurtains/contact.html" class="btn-white">Book Free Measure &amp; Quote</a>
-  <div style="margin-top:1.5rem;"><a href="tel:0434840889" style="color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.9rem;">or call <strong style="color:white;">0434 840 889</strong></a></div>
+  <div style="margin-top:1.5rem;"><a href="tel:0434840889" style="color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.9rem;">or call <strong style="color:var(--gold);">0434 840 889</strong></a></div>
 </div>
 
-<footer>
+<style>
+@media(max-width:900px){[style*="grid-template-columns:repeat(4"]{grid-template-columns:repeat(3,1fr)!important;}}
+@media(max-width:600px){[style*="grid-template-columns:repeat(4"]{grid-template-columns:repeat(2,1fr)!important;}}
+</style>
+
+<script>
+function filterGallery(cat, btn) {
+  document.querySelectorAll('.gf-btn').forEach(b => {
+    b.style.color = 'var(--mid)'; b.style.borderBottomColor = 'transparent'; b.style.fontWeight = '600';
+    b.querySelector('span').style.background = '#f0f0f0'; b.querySelector('span').style.color = 'var(--mid)';
+  });
+  btn.style.color = 'var(--navy)'; btn.style.borderBottomColor = 'var(--orange)'; btn.style.fontWeight = '700';
+  btn.querySelector('span').style.background = '#e8f4f8'; btn.querySelector('span').style.color = 'var(--navy)';
+  document.querySelectorAll('[data-cat]').forEach(sec => {
+    sec.style.display = (cat === 'all' || sec.dataset.cat === cat) ? '' : 'none';
+  });
+  if (cat !== 'all') {
+    const sec = document.querySelector('[data-cat="' + cat + '"]');
+    if (sec) setTimeout(() => { window.scrollTo({top: sec.getBoundingClientRect().top + window.scrollY - 120, behavior:'smooth'}); }, 50);
+  }
+}
+let allImgs = [], curIdx = 0;
+function openLightbox(el) {
+  allImgs = Array.from(document.querySelectorAll('[data-cat]:not([style*="none"]) img'));
+  const img = el.querySelector('img');
+  curIdx = allImgs.indexOf(img);
+  document.getElementById('lightboxImg').src = img.src;
+  const lb = document.getElementById('lightbox');
+  lb.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox(e) {
+  if (!e || e.target === document.getElementById('lightbox') || e.target.textContent === '×') {
+    document.getElementById('lightbox').style.display = 'none';
+    document.body.style.overflow = '';
+  }
+}
+function lightboxNav(dir, e) {
+  e.stopPropagation();
+  curIdx = (curIdx + dir + allImgs.length) % allImgs.length;
+  document.getElementById('lightboxImg').src = allImgs[curIdx].src;
+}
+document.addEventListener('keydown', e => {
+  const lb = document.getElementById('lightbox');
+  if (lb.style.display !== 'flex') return;
+  if (e.key === 'Escape') closeLightbox({target: lb});
+  if (e.key === 'ArrowRight') lightboxNav(1, {stopPropagation:()=>{}});
+  if (e.key === 'ArrowLeft') lightboxNav(-1, {stopPropagation:()=>{}});
+});
+</script><footer>
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="/ucurtains/" class="nav-logo" style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:white;text-decoration:none;">U <span style="color:var(--gold)">Curtains</span></a>
+        <div class="footer-logo-name">U Curtains</div>
         <p>Brisbane's family-owned custom window furnishing specialists. Curtains, blinds, sheers and shutters — made to measure, professionally installed.</p>
-        <p style="margin-top:1rem;">ABN: 68664245005</p>
+        <p style="margin-top:0.5rem;font-size:0.78rem;color:rgba(255,255,255,0.35);">ABN: 68 664 245 005</p>
       </div>
       <div class="footer-col"><h4>Products</h4><ul>
         <li><a href="/ucurtains/curtains.html">Curtains</a></li>
@@ -271,74 +649,18 @@ footer{background:#111;color:rgba(255,255,255,0.7);padding:60px 5vw 30px;}
       <div class="footer-col"><h4>Company</h4><ul>
         <li><a href="/ucurtains/about.html">About Us</a></li>
         <li><a href="/ucurtains/gallery.html">Gallery</a></li>
-        <li><a href="/ucurtains/support.html">Customer Support</a></li>
+        <li><a href="/ucurtains/support.html">Support</a></li>
         <li><a href="/ucurtains/contact.html">Contact</a></li>
       </ul></div>
       <div class="footer-col footer-contact"><h4>Contact</h4>
         <p>📞 <a href="tel:0434840889">0434 840 889</a></p>
         <p>✉ <a href="mailto:sale@ucurtains.com.au">sale@ucurtains.com.au</a></p>
-        <p>📍 2/1362 Beaudesert Road<br>Acacia Ridge QLD 4110</p>
+        <p>📍 1362 Beaudesert Rd<br>Acacia Ridge QLD 4110</p>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 U Curtains. All rights reserved.</span>
-      <span>Installation Gallery Brisbane</span>
+      <span>Brisbane Window Furnishing Specialists</span>
     </div>
   </div>
-</footer>
-
-<script>
-// Filter by section visibility
-function filterSection(cat, btn) {
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  document.querySelectorAll('.gallery-section').forEach(sec => {
-    if (cat === 'all' || sec.dataset.cat === cat) {
-      sec.style.display = '';
-    } else {
-      sec.style.display = 'none';
-    }
-  });
-  // Scroll to first visible section
-  if (cat !== 'all') {
-    const sec = document.querySelector(`[data-cat="${cat}"]`);
-    if (sec) setTimeout(() => sec.scrollIntoView({behavior:'smooth', block:'start'}), 100);
-  } else {
-    window.scrollTo({top: document.querySelector('.filter-bar').offsetTop - 70, behavior:'smooth'});
-  }
-}
-
-// Lightbox
-let allImgs = [], currentIdx = 0;
-function buildImgList() {
-  allImgs = Array.from(document.querySelectorAll('.gallery-section:not([style*="none"]) .gallery-item img'));
-}
-function openLightbox(el) {
-  buildImgList();
-  const img = el.querySelector('img');
-  currentIdx = allImgs.indexOf(img);
-  document.getElementById('lightboxImg').src = img.src;
-  document.getElementById('lightbox').classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-function closeLightbox(e) {
-  if (!e || e.target === document.getElementById('lightbox') || e.target.classList.contains('lightbox-close')) {
-    document.getElementById('lightbox').classList.remove('open');
-    document.body.style.overflow = '';
-  }
-}
-function lightboxNav(dir, e) {
-  e.stopPropagation();
-  currentIdx = (currentIdx + dir + allImgs.length) % allImgs.length;
-  document.getElementById('lightboxImg').src = allImgs[currentIdx].src;
-}
-document.addEventListener('keydown', e => {
-  const lb = document.getElementById('lightbox');
-  if (!lb.classList.contains('open')) return;
-  if (e.key === 'Escape') closeLightbox();
-  if (e.key === 'ArrowRight') lightboxNav(1, {stopPropagation:()=>{}});
-  if (e.key === 'ArrowLeft') lightboxNav(-1, {stopPropagation:()=>{}});
-});
-</script>
-</body>
-</html>
+</footer></body></html>
