@@ -4,241 +4,201 @@
 <meta charset="UTF-8">
 <link rel="icon" type="image/png" href="/ucurtains/favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About U Curtains | Brisbane's Family-Owned Window Specialists</title>
-<meta name="description" content="Meet the team behind U Curtains — Brisbane's family-owned window furnishing specialists with 10 years' experience. Passionate about custom curtains, blinds & shutters for every Brisbane home.">
+<title>About U Curtains | Brisbane Family-Owned Window Specialists</title>
+<meta name="description" content="Meet the team behind U Curtains — Brisbane's family-owned window furnishing specialists with 10 years' experience. Custom curtains, blinds & shutters for every Brisbane home.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.ucurtains.com.au/about">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root { --cream:#F7F4EF;--warm-white:#FDFBF8;--charcoal:#1C1C1C;--mid:#5A5A5A;--light:#9A9A9A;--border:#E2DDD6;--accent:#8B6F47;--accent-light:#F0E8DC;--gold:#C9A96E; }
+:root{--navy:#1a4a5e;--orange:#e07b3c;--gold:#f0c89a;--cream:#fdf8f2;--border:#ede9e2;--mid:#5a6a72;--light:#8a9ea8;--navy-dark:#0f2f3d;}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
-body{font-family:'DM Sans',sans-serif;background:var(--warm-white);color:var(--charcoal);font-size:16px;line-height:1.6;}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(253,251,248,0.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);padding:0 5vw;display:flex;align-items:center;justify-content:space-between;height:70px;}
-.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:var(--charcoal);text-decoration:none;}
-.nav-logo span{color:var(--accent);}
-.nav-links{display:flex;gap:2rem;list-style:none;}
-.nav-links a{text-decoration:none;color:var(--mid);font-size:0.85rem;letter-spacing:0.06em;text-transform:uppercase;transition:color 0.2s;}
-.nav-links a:hover,.nav-links a.active{color:var(--charcoal);}
-.nav-cta{background:var(--charcoal);color:white!important;padding:0.5rem 1.2rem;border-radius:2px;font-size:0.8rem!important;}
-.nav-cta:hover{background:var(--accent)!important;}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;}
-.hamburger span{width:22px;height:1.5px;background:var(--charcoal);display:block;}
-.mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;background:var(--warm-white);border-bottom:1px solid var(--border);padding:1.5rem 5vw;z-index:99;flex-direction:column;gap:1rem;}
-.mobile-menu.open{display:flex;}
-.mobile-menu a{color:var(--charcoal);text-decoration:none;font-size:1rem;padding:0.5rem 0;border-bottom:1px solid var(--border);}
-
-.page-hero{padding:140px 5vw 80px;background:var(--cream);border-bottom:1px solid var(--border);}
+body{font-family:'Nunito',sans-serif;color:#2d2d2d;background:#fff;padding-top:70px;}
+[id]{scroll-margin-top:90px;}
+.page-hero{padding:80px 5vw 60px;background:linear-gradient(135deg,#e8f4f8 0%,#fdf6ee 60%,#fef9f5 100%);border-bottom:1px solid var(--border);}
 .page-hero-inner{max-width:1200px;margin:0 auto;}
 .breadcrumb{font-size:0.8rem;color:var(--light);margin-bottom:1rem;}
 .breadcrumb a{color:var(--light);text-decoration:none;}
-.section-label{font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem;display:block;}
-.page-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,4vw,3.5rem);font-weight:300;line-height:1.15;margin-bottom:1rem;}
-.page-hero h1 em{font-style:italic;color:var(--accent);}
-.page-hero p{font-size:1.05rem;color:var(--mid);max-width:600px;line-height:1.8;}
-
-/* story section */
-.story{padding:90px 5vw;}
-.story-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
-.story-text h2{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;margin-bottom:1.5rem;}
-.story-text h2 em{font-style:italic;color:var(--accent);}
-.story-text p{color:var(--mid);line-height:1.9;margin-bottom:1.2rem;font-size:0.97rem;}
-.story-quote{background:var(--cream);border-left:3px solid var(--gold);padding:2rem 2rem 2rem 2.5rem;border-radius:0 4px 4px 0;margin-top:2rem;}
-.story-quote blockquote{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-style:italic;font-weight:300;line-height:1.6;color:var(--charcoal);margin-bottom:0.75rem;}
-.story-quote cite{font-size:0.82rem;color:var(--light);font-style:normal;}
-
-.story-stats{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;position:sticky;top:100px;}
-.stat-card{background:var(--cream);border:1px solid var(--border);border-radius:4px;padding:2rem;text-align:center;}
-.stat-num{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:300;color:var(--charcoal);line-height:1;margin-bottom:0.4rem;}
-.stat-label{font-size:0.75rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--light);}
-.stat-card.featured{background:var(--charcoal);border-color:var(--charcoal);grid-column:span 2;}
-.stat-card.featured .stat-num{color:var(--gold);}
-.stat-card.featured .stat-label{color:rgba(255,255,255,0.5);}
-
-/* values */
-.values{padding:90px 5vw;background:var(--cream);}
-.values-inner{max-width:1200px;margin:0 auto;}
-.values h2{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;margin-bottom:0.75rem;}
-.values h2 em{font-style:italic;color:var(--accent);}
-.values .sub{color:var(--mid);max-width:560px;margin-bottom:3rem;line-height:1.8;}
-.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;}
-.value-card{background:white;border:1px solid var(--border);border-radius:4px;padding:2rem;position:relative;overflow:hidden;}
-.value-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold);}
-.value-icon{font-size:2rem;margin-bottom:1rem;display:block;}
-.value-card h3{font-size:1rem;font-weight:500;margin-bottom:0.6rem;}
-.value-card p{font-size:0.87rem;color:var(--mid);line-height:1.7;}
-
-/* service area */
-.service-area{padding:90px 5vw;}
-.service-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
-.service-text h2{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;margin-bottom:1rem;}
-.service-text h2 em{font-style:italic;color:var(--accent);}
-.service-text p{color:var(--mid);line-height:1.8;margin-bottom:1.5rem;}
-.suburb-list{display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;}
-.suburb-item{display:flex;align-items:center;gap:0.5rem;font-size:0.87rem;color:var(--mid);padding:0.4rem 0;border-bottom:1px solid var(--border);}
-.suburb-item::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;}
-.btn-primary{display:inline-block;background:var(--charcoal);color:white;padding:0.85rem 2rem;text-decoration:none;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;border-radius:2px;transition:background 0.2s;margin-top:1.5rem;}
-.btn-primary:hover{background:var(--accent);}
-
-.cta-banner{background:var(--accent);padding:80px 5vw;text-align:center;}
-.cta-banner h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;color:white;margin-bottom:1rem;}
-.cta-banner p{color:rgba(255,255,255,0.8);margin-bottom:2rem;}
-.btn-white{display:inline-block;background:white;color:var(--accent);padding:0.9rem 2.5rem;text-decoration:none;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;border-radius:2px;transition:all 0.2s;}
-.btn-white:hover{background:var(--charcoal);color:white;}
-
-footer{background:#111;color:rgba(255,255,255,0.7);padding:60px 5vw 30px;}
+.breadcrumb a:hover{color:var(--orange);}
+.eyebrow{font-size:0.72rem;color:var(--orange);font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:0.5rem;display:block;}
+.page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;line-height:1.2;color:var(--navy);margin-bottom:1rem;}
+.page-hero h1 em{font-style:italic;color:var(--orange);}
+.page-hero p{font-size:1rem;color:var(--mid);max-width:600px;line-height:1.8;margin-bottom:2rem;}
+.btn-primary{display:inline-block;background:var(--orange);color:white;padding:0.8rem 2rem;border-radius:25px;text-decoration:none;font-size:0.88rem;font-weight:700;transition:background 0.2s;box-shadow:0 4px 14px rgba(224,123,60,0.3);}
+.btn-primary:hover{background:#c96a2a;}
+.btn-outline{display:inline-block;border:2px solid var(--navy);color:var(--navy);padding:0.8rem 2rem;border-radius:25px;text-decoration:none;font-size:0.88rem;font-weight:700;transition:all 0.2s;}
+.btn-outline:hover{background:var(--navy);color:white;}
+.btn-sm{display:inline-block;background:var(--orange);color:white;padding:0.55rem 1.4rem;border-radius:20px;text-decoration:none;font-size:0.82rem;font-weight:700;transition:background 0.2s;}
+.btn-sm:hover{background:#c96a2a;}
+.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap;}
+.quick-nav{background:white;border-bottom:1px solid var(--border);padding:0 5vw;position:sticky;top:70px;z-index:50;}
+.quick-nav-inner{max-width:1200px;margin:0 auto;display:flex;overflow-x:auto;}
+.quick-nav a{padding:1rem 1.25rem;font-size:0.8rem;font-weight:600;color:var(--mid);text-decoration:none;white-space:nowrap;border-bottom:3px solid transparent;transition:all 0.2s;}
+.quick-nav a:hover{color:var(--navy);border-bottom-color:var(--orange);}
+.product-section{padding:80px 5vw;border-bottom:1px solid var(--border);}
+.product-section:nth-child(even){background:var(--cream);}
+.product-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+.product-section:nth-child(even) .product-inner{direction:rtl;}
+.product-section:nth-child(even) .product-inner>*{direction:ltr;}
+.product-visual{aspect-ratio:4/3;background:var(--border);border-radius:16px;overflow:hidden;position:relative;}
+.product-visual img{width:100%;height:100%;object-fit:cover;display:block;}
+.product-visual-label{position:absolute;bottom:1rem;left:1rem;background:rgba(26,74,94,0.85);color:white;font-size:0.72rem;padding:0.3rem 0.8rem;border-radius:20px;letter-spacing:0.06em;text-transform:uppercase;font-weight:600;}
+.product-info .tagline{font-size:0.72rem;color:var(--orange);font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:0.4rem;display:block;}
+.product-info h2{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--navy);margin-bottom:1rem;}
+.product-info h2 em{font-style:italic;color:var(--orange);}
+.product-info p{color:var(--mid);line-height:1.8;margin-bottom:1.2rem;font-size:0.95rem;}
+.feature-list{list-style:none;display:flex;flex-direction:column;gap:0.5rem;margin-bottom:1.8rem;}
+.feature-list li{display:flex;align-items:flex-start;gap:0.6rem;font-size:0.9rem;color:var(--mid);}
+.feature-list li::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--orange);flex-shrink:0;margin-top:6px;}
+.ideal-for{display:flex;flex-wrap:wrap;gap:0.4rem;margin-bottom:1.8rem;}
+.ideal-tag{font-size:0.72rem;padding:0.25rem 0.75rem;background:#e8f4f8;color:var(--navy);border-radius:20px;font-weight:600;}
+.cta-banner{background:linear-gradient(135deg,var(--navy) 0%,#1e5a72 100%);padding:80px 5vw;text-align:center;}
+.cta-banner h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;color:white;margin-bottom:1rem;}
+.cta-banner p{color:rgba(255,255,255,0.75);margin-bottom:2rem;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.7;}
+.btn-white{display:inline-block;background:var(--orange);color:white;padding:0.9rem 2.5rem;text-decoration:none;font-size:0.88rem;font-weight:700;border-radius:25px;transition:all 0.2s;box-shadow:0 4px 14px rgba(224,123,60,0.4);}
+.btn-white:hover{background:#c96a2a;}
+footer{background:var(--navy-dark);color:rgba(255,255,255,0.7);padding:60px 5vw 30px;}
 .footer-inner{max-width:1200px;margin:0 auto;}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,0.1);margin-bottom:2rem;}
-.footer-brand p{font-size:0.85rem;line-height:1.7;color:rgba(255,255,255,0.5);margin-top:1rem;}
-.footer-col h4{font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:white;margin-bottom:1rem;}
+.footer-logo-name{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gold);font-weight:700;margin-bottom:0.5rem;}
+.footer-brand p{font-size:0.82rem;line-height:1.7;color:rgba(255,255,255,0.5);}
+.footer-col h4{font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:1rem;font-weight:700;}
 .footer-col ul{list-style:none;}
 .footer-col li{margin-bottom:0.5rem;}
-.footer-col a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.875rem;transition:color 0.2s;}
+.footer-col a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:0.85rem;transition:color 0.2s;font-weight:500;}
 .footer-col a:hover{color:var(--gold);}
-.footer-contact p{font-size:0.875rem;color:rgba(255,255,255,0.5);margin-bottom:0.5rem;}
+.footer-contact p{font-size:0.85rem;color:rgba(255,255,255,0.55);margin-bottom:0.6rem;font-weight:500;}
 .footer-contact a{color:var(--gold);text-decoration:none;}
-.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:0.8rem;color:rgba(255,255,255,0.3);}
-
-@media(max-width:900px){
-  .nav-links,.nav-cta{display:none;}
-  .hamburger{display:flex;}
-  .story-inner,.service-inner{grid-template-columns:1fr;gap:2rem;}
-  .story-stats{position:static;}
-  .values-grid{grid-template-columns:1fr 1fr;}
-  .footer-grid{grid-template-columns:1fr 1fr;}
-}
-@media(max-width:600px){
-  .values-grid{grid-template-columns:1fr;}
-  .footer-grid{grid-template-columns:1fr;}
-  .suburb-list{grid-template-columns:1fr;}
-}
-
-  /* Anchor scroll offset for fixed nav */
-  [id] { scroll-margin-top: 90px; }
+.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:0.78rem;color:rgba(255,255,255,0.3);}
+@media(max-width:900px){.product-inner{grid-template-columns:1fr;gap:2rem;}.product-section:nth-child(even) .product-inner{direction:ltr;}.footer-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.footer-grid{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
-
 <script src="/ucurtains/nav.js"></script>
-
 <div class="page-hero">
   <div class="page-hero-inner">
     <div class="breadcrumb"><a href="/ucurtains/">Home</a> › About</div>
-    <span class="section-label">Family-Owned · Brisbane · 10 Years</span>
+    <span class="eyebrow">Family-Owned · Brisbane · 10 Years</span>
     <h1>Who We <em>Are</em></h1>
     <p>U Curtains was founded on a simple belief — that every home deserves beautiful, well-crafted windows. We're a family-owned Brisbane business with over 10 years of experience helping homeowners transform their spaces with custom window furnishings.</p>
   </div>
 </div>
 
-<section class="story">
-  <div class="story-inner">
-    <div class="story-text">
-      <span class="section-label">Our Story</span>
-      <h2>Built on <em>Passion</em> & Purpose</h2>
-      <p>U Curtains began over a decade ago, born from a genuine love of beautiful interiors and the belief that window furnishings should be more than just practical — they should be a reflection of who you are and how you want to feel in your home.</p>
-      <p>As a single mum running this business from the ground up, our founder understands first-hand how the small details of a home create the environment where your family's best moments happen. That personal understanding shapes everything we do.</p>
-      <p>From our base in Acacia Ridge, we serve homes and offices across Brisbane's south side and beyond. Every customer gets the same personalised attention — we visit your home, listen to what you want, bring samples, take precise measurements and handle every detail of the installation.</p>
-      <p>Over 10 years and hundreds of Brisbane homes later, our commitment hasn't changed: custom-made quality, expert guidance, and a result that genuinely makes you love your windows.</p>
-      <div class="story-quote">
-        <blockquote>"I started this business because I believe every home — no matter the size or budget — deserves windows that make you feel something. Curtains and blinds aren't just coverings. They shape the light, the mood, the memory of a room."</blockquote>
-        <cite>— Founder, U Curtains · Acacia Ridge, Brisbane</cite>
+<!-- STORY -->
+<section style="padding:90px 5vw;">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;">
+    <div>
+      <span style="font-size:0.72rem;color:var(--orange);font-weight:700;letter-spacing:0.14em;text-transform:uppercase;display:block;margin-bottom:0.5rem;">Our Story</span>
+      <h2 style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--navy);margin-bottom:1.5rem;">Built on <em style="font-style:italic;color:var(--orange);">Passion</em> & Purpose</h2>
+      <p style="color:var(--mid);line-height:1.9;margin-bottom:1.2rem;font-size:0.97rem;">U Curtains began over a decade ago, born from a genuine love of beautiful interiors and the belief that window furnishings should be more than just practical — they should be a reflection of who you are and how you want to feel in your home.</p>
+      <p style="color:var(--mid);line-height:1.9;margin-bottom:1.2rem;font-size:0.97rem;">As a single mum running this business from the ground up, our founder understands first-hand how the small details of a home create the environment where your family's best moments happen. That personal understanding shapes everything we do.</p>
+      <p style="color:var(--mid);line-height:1.9;margin-bottom:1.2rem;font-size:0.97rem;">From our base in Acacia Ridge, we serve homes and offices across Brisbane's south side. Every customer gets the same personalised attention — we visit your home, listen to what you want, bring samples, take precise measurements and handle every detail of the installation.</p>
+      <div style="background:var(--cream);border-left:4px solid var(--orange);padding:1.8rem 1.8rem 1.8rem 2rem;border-radius:0 12px 12px 0;margin-top:2rem;">
+        <blockquote style="font-family:'Playfair Display',serif;font-size:1.2rem;font-style:italic;font-weight:400;line-height:1.6;color:var(--navy);margin-bottom:0.75rem;">"I started this business because I believe every home deserves windows that make you feel something. Curtains and blinds aren't just coverings. They shape the light, the mood, the memory of a room."</blockquote>
+        <cite style="font-size:0.82rem;color:var(--light);font-style:normal;">— Founder, U Curtains · Acacia Ridge, Brisbane</cite>
       </div>
-    </div>
-    <div class="story-stats">
-      <div class="stat-card">
-        <div class="stat-num">10+</div>
-        <div class="stat-label">Years in Business</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">500+</div>
-        <div class="stat-label">Happy Clients</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">100%</div>
-        <div class="stat-label">Custom Made</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">Free</div>
-        <div class="stat-label">Measure & Quote</div>
-      </div>
-      <div class="stat-card featured">
-        <div class="stat-num">Brisbane's Own</div>
-        <div class="stat-label">Local, Family-Owned, Always Personal</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="values">
-  <div class="values-inner">
-    <span class="section-label">What We Stand For</span>
-    <h2>Our <em>Values</em></h2>
-    <p class="sub">These aren't just words on a page — they're the principles behind every job we take on and every home we walk into.</p>
-    <div class="values-grid">
-      <div class="value-card">
-        <span class="value-icon">🎯</span>
-        <h3>Precision in Every Detail</h3>
-        <p>We measure twice, cut once and install with care. Every window is different and every measurement matters — we never cut corners.</p>
-      </div>
-      <div class="value-card">
-        <span class="value-icon">💬</span>
-        <h3>Honest Expert Advice</h3>
-        <p>We tell you what will work best in your home — not what's most expensive. Our job is to match you with the right product for your space and budget.</p>
-      </div>
-      <div class="value-card">
-        <span class="value-icon">🏠</span>
-        <h3>Your Home, Your Style</h3>
-        <p>We listen first. Your taste, your lifestyle and your needs guide every recommendation we make. There's no one-size-fits-all here.</p>
-      </div>
-      <div class="value-card">
-        <span class="value-icon">⏱️</span>
-        <h3>Respect for Your Time</h3>
-        <p>We arrive when we say we will, we finish when we say we will and we leave your home exactly as we found it — clean and tidy.</p>
-      </div>
-      <div class="value-card">
-        <span class="value-icon">✅</span>
-        <h3>Quality That Lasts</h3>
-        <p>We only use premium fabrics and hardware that stand up to Brisbane's climate. Our products look beautiful on day one and day one thousand.</p>
-      </div>
-      <div class="value-card">
-        <span class="value-icon">🤝</span>
-        <h3>Local Business, Local Pride</h3>
-        <p>We're a Brisbane business serving Brisbane homes. Supporting us means supporting a local family — and we take that responsibility seriously.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="service-area">
-  <div class="service-inner">
-    <div class="service-text">
-      <span class="section-label">Where We Work</span>
-      <h2>Serving <em>Brisbane</em> & Surrounds</h2>
-      <p>Based in Acacia Ridge, we provide free in-home measure and quote across Brisbane's south side and surrounding suburbs. If you're not sure whether we cover your area, just give us a call — chances are we do.</p>
-      <p>We service both residential and commercial properties — homes, apartments, offices, rental properties and new builds.</p>
-      <a href="/ucurtains/contact.html" class="btn-primary">Book Your Free Quote</a>
     </div>
     <div>
-      <div class="suburb-list">
-        <div class="suburb-item">Acacia Ridge</div>
-        <div class="suburb-item">Sunnybank</div>
-        <div class="suburb-item">Carindale</div>
-        <div class="suburb-item">Eight Mile Plains</div>
-        <div class="suburb-item">Moorooka</div>
-        <div class="suburb-item">Salisbury</div>
-        <div class="suburb-item">Rochedale</div>
-        <div class="suburb-item">Macgregor</div>
-        <div class="suburb-item">Runcorn</div>
-        <div class="suburb-item">Stretton</div>
-        <div class="suburb-item">Kuraby</div>
-        <div class="suburb-item">Wishart</div>
-        <div class="suburb-item">Mount Gravatt</div>
-        <div class="suburb-item">Yeronga</div>
-        <div class="suburb-item">Coopers Plains</div>
-        <div class="suburb-item">And more…</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;">
+        <div style="background:var(--cream);border:1px solid var(--border);border-radius:16px;padding:2rem;text-align:center;">
+          <div style="font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:700;color:var(--navy);line-height:1;">10+</div>
+          <div style="font-size:0.75rem;color:var(--light);letter-spacing:0.08em;text-transform:uppercase;margin-top:0.4rem;">Years in Business</div>
+        </div>
+        <div style="background:var(--cream);border:1px solid var(--border);border-radius:16px;padding:2rem;text-align:center;">
+          <div style="font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:700;color:var(--navy);line-height:1;">500+</div>
+          <div style="font-size:0.75rem;color:var(--light);letter-spacing:0.08em;text-transform:uppercase;margin-top:0.4rem;">Happy Clients</div>
+        </div>
+        <div style="background:var(--cream);border:1px solid var(--border);border-radius:16px;padding:2rem;text-align:center;">
+          <div style="font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:700;color:var(--navy);line-height:1;">100%</div>
+          <div style="font-size:0.75rem;color:var(--light);letter-spacing:0.08em;text-transform:uppercase;margin-top:0.4rem;">Custom Made</div>
+        </div>
+        <div style="background:var(--cream);border:1px solid var(--border);border-radius:16px;padding:2rem;text-align:center;">
+          <div style="font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:700;color:var(--navy);line-height:1;">Free</div>
+          <div style="font-size:0.75rem;color:var(--light);letter-spacing:0.08em;text-transform:uppercase;margin-top:0.4rem;">Measure &amp; Quote</div>
+        </div>
+        <div style="background:var(--navy);border-radius:16px;padding:2rem;text-align:center;grid-column:span 2;">
+          <div style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--gold);line-height:1;">Brisbane's Own</div>
+          <div style="font-size:0.75rem;color:rgba(255,255,255,0.5);letter-spacing:0.08em;text-transform:uppercase;margin-top:0.4rem;">Local, Family-Owned, Always Personal</div>
+        </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section style="padding:90px 5vw;background:var(--cream);">
+  <div style="max-width:1200px;margin:0 auto;">
+    <span style="font-size:0.72rem;color:var(--orange);font-weight:700;letter-spacing:0.14em;text-transform:uppercase;display:block;margin-bottom:0.5rem;">What We Stand For</span>
+    <h2 style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem;">Our <em style="font-style:italic;color:var(--orange);">Values</em></h2>
+    <p style="color:var(--mid);max-width:560px;margin-bottom:3rem;line-height:1.8;">These aren't just words on a page — they're the principles behind every job we take on and every home we walk into.</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;">
+      <div style="background:white;border:1px solid var(--border);border-radius:16px;padding:2rem;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;left:0;right:0;height:4px;background:var(--orange);border-radius:16px 16px 0 0;"></div>
+        <div style="font-size:1.8rem;margin-bottom:1rem;">🎯</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--navy);font-weight:700;margin-bottom:0.5rem;">Precision in Every Detail</h3>
+        <p style="font-size:0.85rem;color:var(--mid);line-height:1.7;">We measure twice, cut once and install with care. Every window is different and every measurement matters.</p>
+      </div>
+      <div style="background:white;border:1px solid var(--border);border-radius:16px;padding:2rem;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;left:0;right:0;height:4px;background:var(--orange);border-radius:16px 16px 0 0;"></div>
+        <div style="font-size:1.8rem;margin-bottom:1rem;">💬</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--navy);font-weight:700;margin-bottom:0.5rem;">Honest Expert Advice</h3>
+        <p style="font-size:0.85rem;color:var(--mid);line-height:1.7;">We tell you what will work best in your home — not what's most expensive. Our job is to match you with the right product.</p>
+      </div>
+      <div style="background:white;border:1px solid var(--border);border-radius:16px;padding:2rem;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;left:0;right:0;height:4px;background:var(--orange);border-radius:16px 16px 0 0;"></div>
+        <div style="font-size:1.8rem;margin-bottom:1rem;">🏠</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--navy);font-weight:700;margin-bottom:0.5rem;">Your Home, Your Style</h3>
+        <p style="font-size:0.85rem;color:var(--mid);line-height:1.7;">We listen first. Your taste, your lifestyle and your needs guide every recommendation we make.</p>
+      </div>
+      <div style="background:white;border:1px solid var(--border);border-radius:16px;padding:2rem;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;left:0;right:0;height:4px;background:var(--orange);border-radius:16px 16px 0 0;"></div>
+        <div style="font-size:1.8rem;margin-bottom:1rem;">⏱️</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--navy);font-weight:700;margin-bottom:0.5rem;">Respect for Your Time</h3>
+        <p style="font-size:0.85rem;color:var(--mid);line-height:1.7;">We arrive when we say we will, finish when we say we will, and leave your home clean and tidy.</p>
+      </div>
+      <div style="background:white;border:1px solid var(--border);border-radius:16px;padding:2rem;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;left:0;right:0;height:4px;background:var(--orange);border-radius:16px 16px 0 0;"></div>
+        <div style="font-size:1.8rem;margin-bottom:1rem;">✅</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--navy);font-weight:700;margin-bottom:0.5rem;">Quality That Lasts</h3>
+        <p style="font-size:0.85rem;color:var(--mid);line-height:1.7;">We only use premium fabrics and hardware that stand up to Brisbane's climate. Beautiful on day one and day one thousand.</p>
+      </div>
+      <div style="background:white;border:1px solid var(--border);border-radius:16px;padding:2rem;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;left:0;right:0;height:4px;background:var(--orange);border-radius:16px 16px 0 0;"></div>
+        <div style="font-size:1.8rem;margin-bottom:1rem;">🤝</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--navy);font-weight:700;margin-bottom:0.5rem;">Local Business, Local Pride</h3>
+        <p style="font-size:0.85rem;color:var(--mid);line-height:1.7;">We're a Brisbane business serving Brisbane homes. Supporting us means supporting a local family.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section style="padding:90px 5vw;">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;">
+    <div>
+      <span style="font-size:0.72rem;color:var(--orange);font-weight:700;letter-spacing:0.14em;text-transform:uppercase;display:block;margin-bottom:0.5rem;">Where We Work</span>
+      <h2 style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--navy);margin-bottom:1rem;">Serving <em style="font-style:italic;color:var(--orange);">Brisbane</em> &amp; Surrounds</h2>
+      <p style="color:var(--mid);line-height:1.8;margin-bottom:1.2rem;">Based in Acacia Ridge, we provide free in-home measure and quote across Brisbane's south side and surrounding suburbs.</p>
+      <p style="color:var(--mid);line-height:1.8;margin-bottom:2rem;">We service both residential and commercial properties — homes, apartments, offices, rental properties and new builds.</p>
+      <a href="/ucurtains/contact.html" class="btn-primary">Book Your Free Quote</a>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.6rem;">
+      <div style="padding:0.5rem 0;border-bottom:1px solid var(--border);font-size:0.87rem;color:var(--mid);display:flex;align-items:center;gap:0.5rem;font-weight:500;"><span style="width:8px;height:8px;border-radius:50%;background:var(--orange);flex-shrink:0;"></span>Acacia Ridge</div>
+      <div style="padding:0.5rem 0;border-bottom:1px solid var(--border);font-size:0.87rem;color:var(--mid);display:flex;align-items:center;gap:0.5rem;font-weight:500;"><span style="width:8px;height:8px;border-radius:50%;background:var(--orange);flex-shrink:0;"></span>Sunnybank</div>
+      <div style="padding:0.5rem 0;border-bottom:1px solid var(--border);font-size:0.87rem;color:var(--mid);display:flex;align-items:center;gap:0.5rem;font-weight:500;"><span style="width:8px;height:8px;border-radius:50%;background:var(--orange);flex-shrink:0;"></span>Carindale</div>
+      <div style="padding:0.5rem 0;border-bottom:1px solid var(--border);font-size:0.87rem;color:var(--mid);display:flex;align-items:center;gap:0.5rem;font-weight:500;"><span style="width:8px;height:8px;border-radius:50%;background:var(--orange);flex-shrink:0;"></span>Eight Mile Plains</div>
+      <div style="padding:0.5rem 0;border-bottom:1px solid var(--border);font-size:0.87rem;color:var(--mid);display:flex;align-items:center;gap:0.5rem;font-weight:500;"><span style="width:8px;height:8px;border-radius:50%;background:var(--orange);flex-shrink:0;"></span>Moorooka</div>
+      <div style="padding:0.5rem 0;border-bottom:1px solid var(--border);font-size:0.87rem;color:var(--mid);display:flex;align-items:center;gap:0.5rem;font-weight:500;"><span style="width:8px;height:8px;border-radius:50%;background:var(--orange);flex-shrink:0;"></span>Salisbury</div>
+      <div style="padding:0.5rem 0;border-bottom:1px solid var(--border);font-size:0.87rem;color:var(--mid);display:flex;align-items:center;gap:0.5rem;font-weight:500;"><span style="width:8px;height:8px;border-radius:50%;background:var(--orange);flex-shrink:0;"></span>Rochedale</div>
+      <div style="padding:0.5rem 0;border-bottom:1px solid var(--border);font-size:0.87rem;color:var(--mid);display:flex;align-items:center;gap:0.5rem;font-weight:500;"><span style="width:8px;height:8px;border-radius:50%;background:var(--orange);flex-shrink:0;"></span>Macgregor</div>
+      <div style="padding:0.5rem 0;border-bottom:1px solid var(--border);font-size:0.87rem;color:var(--mid);display:flex;align-items:center;gap:0.5rem;font-weight:500;"><span style="width:8px;height:8px;border-radius:50%;background:var(--orange);flex-shrink:0;"></span>Runcorn</div>
+      <div style="padding:0.5rem 0;border-bottom:1px solid var(--border);font-size:0.87rem;color:var(--mid);display:flex;align-items:center;gap:0.5rem;font-weight:500;"><span style="width:8px;height:8px;border-radius:50%;background:var(--orange);flex-shrink:0;"></span>Stretton</div>
+      <div style="padding:0.5rem 0;border-bottom:1px solid var(--border);font-size:0.87rem;color:var(--mid);display:flex;align-items:center;gap:0.5rem;font-weight:500;"><span style="width:8px;height:8px;border-radius:50%;background:var(--orange);flex-shrink:0;"></span>Kuraby</div>
+      <div style="padding:0.5rem 0;border-bottom:1px solid var(--border);font-size:0.87rem;color:var(--mid);display:flex;align-items:center;gap:0.5rem;font-weight:500;"><span style="width:8px;height:8px;border-radius:50%;background:var(--orange);flex-shrink:0;"></span>Wishart</div>
+      <div style="padding:0.5rem 0;border-bottom:1px solid var(--border);font-size:0.87rem;color:var(--mid);display:flex;align-items:center;gap:0.5rem;font-weight:500;"><span style="width:8px;height:8px;border-radius:50%;background:var(--orange);flex-shrink:0;"></span>Mount Gravatt</div>
+      <div style="padding:0.5rem 0;border-bottom:1px solid var(--border);font-size:0.87rem;color:var(--mid);display:flex;align-items:center;gap:0.5rem;font-weight:500;"><span style="width:8px;height:8px;border-radius:50%;background:var(--orange);flex-shrink:0;"></span>And more…</div>
     </div>
   </div>
 </section>
@@ -246,38 +206,30 @@ footer{background:#111;color:rgba(255,255,255,0.7);padding:60px 5vw 30px;}
 <div class="cta-banner">
   <h2>Let's Transform Your Windows Together</h2>
   <p>Book a free in-home measure and quote with our Brisbane team. No obligation, no pressure — just honest advice and beautiful results.</p>
-  <a href="/ucurtains/contact.html" class="btn-white">Book Free Measure & Quote</a>
-  <div style="margin-top:1.5rem;"><a href="tel:0434840889" style="color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.9rem;">or call <strong style="color:white;">0434 840 889</strong></a></div>
-</div>
-
-<footer>
+  <a href="/ucurtains/contact.html" class="btn-white">Book Free Measure &amp; Quote</a>
+  <div style="margin-top:1.5rem;"><a href="tel:0434840889" style="color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.9rem;">or call <strong style="color:var(--gold);">0434 840 889</strong></a></div>
+</div><footer>
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="/ucurtains/" class="nav-logo" style="color:white;">U <span style="color:var(--gold)">Curtains</span></a>
+        <div class="footer-logo-name">U Curtains</div>
         <p>Brisbane's family-owned custom window furnishing specialists. Curtains, blinds, sheers and shutters — made to measure, professionally installed.</p>
-        <p style="margin-top:1rem;">ABN: 68664245005</p>
+        <p style="margin-top:0.5rem;font-size:0.78rem;color:rgba(255,255,255,0.35);">ABN: 68 664 245 005</p>
       </div>
-      <div class="footer-col">
-        <h4>Products</h4>
-        <ul>
-          <li><a href="/ucurtains/curtains.html">Curtains</a></li>
-          <li><a href="/ucurtains/sheers.html">Sheers</a></li>
-          <li><a href="/ucurtains/blinds.html">Blinds</a></li>
-          <li><a href="/ucurtains/shutters.html">Shutters</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="/ucurtains/about.html">About Us</a></li>
-          <li><a href="/ucurtains/gallery.html">Gallery</a></li>
-          <li><a href="/ucurtains/contact.html">Contact</a></li>
-          <li><a href="/ucurtains/contact.html">Free Quote</a></li>
-        </ul>
-      </div>
-      <div class="footer-col footer-contact">
-        <h4>Contact</h4>
+      <div class="footer-col"><h4>Products</h4><ul>
+        <li><a href="/ucurtains/curtains.html">Curtains</a></li>
+        <li><a href="/ucurtains/sheers.html">Sheers</a></li>
+        <li><a href="/ucurtains/blinds.html">Blinds</a></li>
+        <li><a href="/ucurtains/shutters.html">Shutters</a></li>
+        <li><a href="/ucurtains/accessories.html">Accessories</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Company</h4><ul>
+        <li><a href="/ucurtains/about.html">About Us</a></li>
+        <li><a href="/ucurtains/gallery.html">Gallery</a></li>
+        <li><a href="/ucurtains/support.html">Support</a></li>
+        <li><a href="/ucurtains/contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-col footer-contact"><h4>Contact</h4>
         <p>📞 <a href="tel:0434840889">0434 840 889</a></p>
         <p>✉ <a href="mailto:sale@ucurtains.com.au">sale@ucurtains.com.au</a></p>
         <p>📍 1362 Beaudesert Rd<br>Acacia Ridge QLD 4110</p>
@@ -285,13 +237,7 @@ footer{background:#111;color:rgba(255,255,255,0.7);padding:60px 5vw 30px;}
     </div>
     <div class="footer-bottom">
       <span>© 2026 U Curtains. All rights reserved.</span>
-      <span>About U Curtains Brisbane</span>
+      <span>Brisbane Window Furnishing Specialists</span>
     </div>
   </div>
-</footer>
-<script>
-function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
-document.addEventListener('click',function(e){const m=document.getElementById('mobileMenu');const h=document.querySelector('.hamburger');if(!m.contains(e.target)&&!h.contains(e.target))m.classList.remove('open');});
-</script>
-</body>
-</html>
+</footer></body></html>

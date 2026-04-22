@@ -4,348 +4,192 @@
 <meta charset="UTF-8">
 <link rel="icon" type="image/png" href="/ucurtains/favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Curtain Accessories Brisbane | Rods, Tracks & More | U Curtains</title>
-<meta name="description" content="Complete your window furnishing with quality curtain accessories. Electric tracks, rods, extendable and curved tracks. Professional advice and installation available across Brisbane.">
+<title>Curtain Accessories Brisbane | Tracks, Rods & More | U Curtains</title>
+<meta name="description" content="Quality curtain accessories for Brisbane homes. Electric tracks, decorative rods, extendable and curved tracks. Professional advice and installation available.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.ucurtains.com.au/curtain-accessories">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Curtain Accessories Brisbane",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "U Curtains",
-    "telephone": "0434840889",
-    "address": {"@type": "PostalAddress", "addressLocality": "Acacia Ridge", "addressRegion": "QLD", "addressCountry": "AU"}
-  },
-  "areaServed": "Brisbane"
-}
-</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Curtain Accessories Brisbane","provider":{"@type":"LocalBusiness","name":"U Curtains","telephone":"0434840889"},"areaServed":"Brisbane"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--cream:#F7F4EF;--warm-white:#FDFBF8;--charcoal:#1C1C1C;--mid:#5A5A5A;--light:#9A9A9A;--border:#E2DDD6;--accent:#8B6F47;--accent-light:#F0E8DC;--gold:#C9A96E;}
+:root{--navy:#1a4a5e;--orange:#e07b3c;--gold:#f0c89a;--cream:#fdf8f2;--border:#ede9e2;--mid:#5a6a72;--light:#8a9ea8;--navy-dark:#0f2f3d;}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
-body{font-family:'DM Sans',sans-serif;background:var(--warm-white);color:var(--charcoal);font-size:16px;line-height:1.6;}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(253,251,248,0.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);padding:0 5vw;display:flex;align-items:center;justify-content:space-between;height:70px;}
-.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:var(--charcoal);text-decoration:none;}
-.nav-logo span{color:var(--accent);}
-.nav-links{display:flex;gap:0;list-style:none;height:70px;}
-.nav-item{position:relative;display:flex;align-items:center;}
-.nav-item>a{padding:0 1rem;text-decoration:none;color:var(--mid);font-size:0.82rem;letter-spacing:0.06em;text-transform:uppercase;transition:color 0.2s;white-space:nowrap;height:70px;display:flex;align-items:center;gap:0.3rem;}
-.nav-item>a:hover,.nav-item>a.active{color:var(--charcoal);}
-.nav-item>a .arrow{font-size:0.6rem;transition:transform 0.2s;}
-.nav-item:hover>a .arrow{transform:rotate(180deg);}
-.dropdown{position:absolute;top:70px;left:0;background:white;border:1px solid var(--border);border-top:none;min-width:200px;opacity:0;visibility:hidden;transform:translateY(-8px);transition:all 0.2s;z-index:200;box-shadow:0 8px 24px rgba(0,0,0,0.08);}
-.nav-item:hover .dropdown{opacity:1;visibility:visible;transform:translateY(0);}
-.dropdown a{display:block;padding:0.65rem 1.2rem;font-size:0.82rem;color:var(--mid);text-decoration:none;border-bottom:1px solid var(--border);transition:all 0.15s;white-space:nowrap;}
-.dropdown a:last-child{border-bottom:none;}
-.dropdown a:hover{background:var(--cream);color:var(--charcoal);padding-left:1.5rem;}
-.nav-cta-wrap{margin-left:0.5rem;}
-.nav-cta{background:var(--charcoal);color:white!important;padding:0.5rem 1.2rem;border-radius:2px;font-size:0.8rem;text-decoration:none;letter-spacing:0.06em;text-transform:uppercase;transition:background 0.2s;white-space:nowrap;}
-.nav-cta:hover{background:var(--accent)!important;}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;}
-.hamburger span{width:22px;height:1.5px;background:var(--charcoal);display:block;transition:all 0.3s;}
-.mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;background:var(--warm-white);border-bottom:1px solid var(--border);padding:1rem 5vw;z-index:99;flex-direction:column;max-height:calc(100vh - 70px);overflow-y:auto;}
-.mobile-menu.open{display:flex;}
-.mobile-section{border-bottom:1px solid var(--border);}
-.mobile-section-title{font-size:0.9rem;font-weight:500;color:var(--charcoal);padding:0.75rem 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;}
-.mobile-section-title .arr{transition:transform 0.2s;font-size:0.7rem;color:var(--light);}
-.mobile-section-title.expanded .arr{transform:rotate(180deg);}
-.mobile-sub{display:none;flex-direction:column;padding-bottom:0.5rem;}
-.mobile-sub.open{display:flex;}
-.mobile-sub a{font-size:0.85rem;color:var(--mid);text-decoration:none;padding:0.4rem 0 0.4rem 1rem;border-bottom:1px solid var(--border);}
-.mobile-sub a:last-child{border-bottom:none;}
-.mobile-direct a{font-size:0.9rem;color:var(--charcoal);text-decoration:none;padding:0.75rem 0;display:block;border-bottom:1px solid var(--border);}
-
-.page-hero{padding:140px 5vw 80px;background:var(--cream);border-bottom:1px solid var(--border);}
+body{font-family:'Nunito',sans-serif;color:#2d2d2d;background:#fff;padding-top:70px;}
+[id]{scroll-margin-top:90px;}
+.page-hero{padding:80px 5vw 60px;background:linear-gradient(135deg,#e8f4f8 0%,#fdf6ee 60%,#fef9f5 100%);border-bottom:1px solid var(--border);}
 .page-hero-inner{max-width:1200px;margin:0 auto;}
 .breadcrumb{font-size:0.8rem;color:var(--light);margin-bottom:1rem;}
 .breadcrumb a{color:var(--light);text-decoration:none;}
-.breadcrumb a:hover{color:var(--accent);}
-.section-label{font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem;display:block;}
-.page-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,4vw,3.5rem);font-weight:300;line-height:1.15;margin-bottom:1rem;}
-.page-hero h1 em{font-style:italic;color:var(--accent);}
-.page-hero p{font-size:1.05rem;color:var(--mid);max-width:600px;line-height:1.8;margin-bottom:2rem;}
+.breadcrumb a:hover{color:var(--orange);}
+.eyebrow{font-size:0.72rem;color:var(--orange);font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:0.5rem;display:block;}
+.page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;line-height:1.2;color:var(--navy);margin-bottom:1rem;}
+.page-hero h1 em{font-style:italic;color:var(--orange);}
+.page-hero p{font-size:1rem;color:var(--mid);max-width:600px;line-height:1.8;margin-bottom:2rem;}
+.btn-primary{display:inline-block;background:var(--orange);color:white;padding:0.8rem 2rem;border-radius:25px;text-decoration:none;font-size:0.88rem;font-weight:700;transition:background 0.2s;box-shadow:0 4px 14px rgba(224,123,60,0.3);}
+.btn-primary:hover{background:#c96a2a;}
+.btn-outline{display:inline-block;border:2px solid var(--navy);color:var(--navy);padding:0.8rem 2rem;border-radius:25px;text-decoration:none;font-size:0.88rem;font-weight:700;transition:all 0.2s;}
+.btn-outline:hover{background:var(--navy);color:white;}
+.btn-sm{display:inline-block;background:var(--orange);color:white;padding:0.55rem 1.4rem;border-radius:20px;text-decoration:none;font-size:0.82rem;font-weight:700;transition:background 0.2s;}
+.btn-sm:hover{background:#c96a2a;}
 .hero-ctas{display:flex;gap:1rem;flex-wrap:wrap;}
-.btn-primary{display:inline-block;background:var(--charcoal);color:white;padding:0.85rem 2rem;text-decoration:none;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;border-radius:2px;transition:background 0.2s;}
-.btn-primary:hover{background:var(--accent);}
-.btn-outline{display:inline-block;border:1px solid var(--charcoal);color:var(--charcoal);padding:0.85rem 2rem;text-decoration:none;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;border-radius:2px;transition:all 0.2s;}
-.btn-outline:hover{background:var(--charcoal);color:white;}
-
 .quick-nav{background:white;border-bottom:1px solid var(--border);padding:0 5vw;position:sticky;top:70px;z-index:50;}
 .quick-nav-inner{max-width:1200px;margin:0 auto;display:flex;overflow-x:auto;}
-.quick-nav a{padding:1rem 1.25rem;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--mid);text-decoration:none;white-space:nowrap;border-bottom:2px solid transparent;transition:all 0.2s;}
-.quick-nav a:hover{color:var(--charcoal);border-bottom-color:var(--gold);}
-
+.quick-nav a{padding:1rem 1.25rem;font-size:0.8rem;font-weight:600;color:var(--mid);text-decoration:none;white-space:nowrap;border-bottom:3px solid transparent;transition:all 0.2s;}
+.quick-nav a:hover{color:var(--navy);border-bottom-color:var(--orange);}
 .product-section{padding:80px 5vw;border-bottom:1px solid var(--border);}
 .product-section:nth-child(even){background:var(--cream);}
 .product-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
 .product-section:nth-child(even) .product-inner{direction:rtl;}
 .product-section:nth-child(even) .product-inner>*{direction:ltr;}
-.product-visual{aspect-ratio:4/3;background:var(--border);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:4rem;position:relative;overflow:hidden;}
-.product-visual-label{position:absolute;bottom:1rem;left:1rem;background:rgba(28,28,28,0.7);color:white;font-size:0.75rem;padding:0.3rem 0.7rem;border-radius:2px;letter-spacing:0.06em;text-transform:uppercase;}
-.product-info h2{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;margin-bottom:1rem;}
-.product-info h2 em{font-style:italic;color:var(--accent);}
-.product-info .tagline{font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;}
-.product-info p{color:var(--mid);line-height:1.8;margin-bottom:1.5rem;font-size:0.95rem;}
-.feature-list{list-style:none;display:flex;flex-direction:column;gap:0.6rem;margin-bottom:2rem;}
+.product-visual{aspect-ratio:4/3;background:var(--border);border-radius:16px;overflow:hidden;position:relative;}
+.product-visual img{width:100%;height:100%;object-fit:cover;display:block;}
+.product-visual-label{position:absolute;bottom:1rem;left:1rem;background:rgba(26,74,94,0.85);color:white;font-size:0.72rem;padding:0.3rem 0.8rem;border-radius:20px;letter-spacing:0.06em;text-transform:uppercase;font-weight:600;}
+.product-info .tagline{font-size:0.72rem;color:var(--orange);font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:0.4rem;display:block;}
+.product-info h2{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--navy);margin-bottom:1rem;}
+.product-info h2 em{font-style:italic;color:var(--orange);}
+.product-info p{color:var(--mid);line-height:1.8;margin-bottom:1.2rem;font-size:0.95rem;}
+.feature-list{list-style:none;display:flex;flex-direction:column;gap:0.5rem;margin-bottom:1.8rem;}
 .feature-list li{display:flex;align-items:flex-start;gap:0.6rem;font-size:0.9rem;color:var(--mid);}
-.feature-list li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:7px;}
-.ideal-for{display:flex;flex-wrap:wrap;gap:0.4rem;margin-bottom:2rem;}
-.ideal-tag{font-size:0.75rem;padding:0.25rem 0.75rem;background:white;border:1px solid var(--border);border-radius:20px;color:var(--mid);}
-.btn-sm{display:inline-block;background:var(--charcoal);color:white;padding:0.6rem 1.4rem;text-decoration:none;font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;border-radius:2px;transition:background 0.2s;}
-.btn-sm:hover{background:var(--accent);}
-
-.cta-banner{background:var(--accent);padding:80px 5vw;text-align:center;}
-.cta-banner h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;color:white;margin-bottom:1rem;}
-.cta-banner p{color:rgba(255,255,255,0.8);margin-bottom:2rem;}
-.btn-white{display:inline-block;background:white;color:var(--accent);padding:0.9rem 2.5rem;text-decoration:none;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;border-radius:2px;transition:all 0.2s;}
-.btn-white:hover{background:var(--charcoal);color:white;}
-
-footer{background:#111;color:rgba(255,255,255,0.7);padding:60px 5vw 30px;}
+.feature-list li::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--orange);flex-shrink:0;margin-top:6px;}
+.ideal-for{display:flex;flex-wrap:wrap;gap:0.4rem;margin-bottom:1.8rem;}
+.ideal-tag{font-size:0.72rem;padding:0.25rem 0.75rem;background:#e8f4f8;color:var(--navy);border-radius:20px;font-weight:600;}
+.cta-banner{background:linear-gradient(135deg,var(--navy) 0%,#1e5a72 100%);padding:80px 5vw;text-align:center;}
+.cta-banner h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;color:white;margin-bottom:1rem;}
+.cta-banner p{color:rgba(255,255,255,0.75);margin-bottom:2rem;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.7;}
+.btn-white{display:inline-block;background:var(--orange);color:white;padding:0.9rem 2.5rem;text-decoration:none;font-size:0.88rem;font-weight:700;border-radius:25px;transition:all 0.2s;box-shadow:0 4px 14px rgba(224,123,60,0.4);}
+.btn-white:hover{background:#c96a2a;}
+footer{background:var(--navy-dark);color:rgba(255,255,255,0.7);padding:60px 5vw 30px;}
 .footer-inner{max-width:1200px;margin:0 auto;}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,0.1);margin-bottom:2rem;}
-.footer-brand p{font-size:0.85rem;line-height:1.7;color:rgba(255,255,255,0.5);margin-top:1rem;}
-.footer-col h4{font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:white;margin-bottom:1rem;}
+.footer-logo-name{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--gold);font-weight:700;margin-bottom:0.5rem;}
+.footer-brand p{font-size:0.82rem;line-height:1.7;color:rgba(255,255,255,0.5);}
+.footer-col h4{font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:1rem;font-weight:700;}
 .footer-col ul{list-style:none;}
 .footer-col li{margin-bottom:0.5rem;}
-.footer-col a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.875rem;transition:color 0.2s;}
+.footer-col a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:0.85rem;transition:color 0.2s;font-weight:500;}
 .footer-col a:hover{color:var(--gold);}
-.footer-contact p{font-size:0.875rem;color:rgba(255,255,255,0.5);margin-bottom:0.5rem;}
+.footer-contact p{font-size:0.85rem;color:rgba(255,255,255,0.55);margin-bottom:0.6rem;font-weight:500;}
 .footer-contact a{color:var(--gold);text-decoration:none;}
-.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:0.8rem;color:rgba(255,255,255,0.3);}
-
-@media(max-width:1100px){.nav-item>a{padding:0 0.7rem;font-size:0.78rem;}}
-@media(max-width:900px){
-  .nav-links,.nav-cta-wrap{display:none;}
-  .hamburger{display:flex;}
-  .product-inner{grid-template-columns:1fr;gap:2rem;}
-  .product-section:nth-child(even) .product-inner{direction:ltr;}
-  .footer-grid{grid-template-columns:1fr 1fr;}
-}
+.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:0.78rem;color:rgba(255,255,255,0.3);}
+@media(max-width:900px){.product-inner{grid-template-columns:1fr;gap:2rem;}.product-section:nth-child(even) .product-inner{direction:ltr;}.footer-grid{grid-template-columns:1fr 1fr;}}
 @media(max-width:600px){.footer-grid{grid-template-columns:1fr;}}
-
-  /* Anchor scroll offset for fixed nav */
-  [id] { scroll-margin-top: 90px; }
 </style>
 </head>
 <body>
-
 <script src="/ucurtains/nav.js"></script>
-
 <div class="page-hero">
   <div class="page-hero-inner">
-    <div class="breadcrumb"><a href="/ucurtains/">Home</a> › Accessories</div>
-    <span class="section-label">The Finishing Touches</span>
+    <div class="breadcrumb"><a href="/ucurtains/">Home</a> › Curtain Accessories Brisbane</div>
+    <span class="eyebrow">The Finishing Touches</span>
     <h1>Curtain <em>Accessories</em></h1>
-    <p>The right hardware makes all the difference. From sleek electric tracks to decorative rods, our accessories are selected for quality, durability and style — completing your window furnishing with precision and elegance.</p>
+    <p>The right hardware makes all the difference. From sleek electric tracks to decorative rods, our accessories are selected for quality, durability and style — completing your window furnishing with precision.</p>
     <div class="hero-ctas">
       <a href="/ucurtains/contact.html" class="btn-primary">Get Free Quote</a>
       <a href="tel:0434840889" class="btn-outline">Call 0434 840 889</a>
     </div>
   </div>
 </div>
+<nav class="quick-nav"><div class="quick-nav-inner"><a href="#electric-tracks">Electric Tracks</a><a href="#rods">Curtain Rods</a><a href="#extendable-track">Extendable Track</a><a href="#curved-tracks">Curved Tracks</a></div></nav>
 
-<nav class="quick-nav">
-  <div class="quick-nav-inner">
-    <a href="#electric-tracks">Electric Tracks</a>
-    <a href="#rods">Rods</a>
-    <a href="#extendable-track">Extendable Track</a>
-    <a href="#curved-tracks">Curved Tracks</a>
-  </div>
-</nav>
-
-<!-- ELECTRIC TRACKS -->
 <div class="product-section" id="electric-tracks">
   <div class="product-inner">
-    <div class="product-visual" style="padding:0;overflow:hidden;">
-      <img src="electric-track.jpg" alt="Electric curtain tracks Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
+    <div class="product-visual">
+      <img src="/ucurtains/electric-track.jpg" alt="Electric curtain tracks Brisbane - U Curtains" loading="lazy">
       <div class="product-visual-label">Electric Tracks</div>
     </div>
-    </div>
     <div class="product-info">
-      <div class="tagline">Motorised & Smart</div>
-      <h2><em>Electric</em> Tracks</h2>
-      <p>Electric curtain tracks bring effortless automation to your window furnishings. Open and close your curtains at the touch of a button, via a smartphone app, or with a voice command through Google Home or Amazon Alexa.</p>
-      <p>Ideal for large curtain spans, high windows, or simply the luxury of full home automation — electric tracks are whisper-quiet, reliable and elegantly slim.</p>
-      <ul class="feature-list">
-        <li>Control via remote, app or voice assistant</li>
-        <li>Compatible with Google Home and Amazon Alexa</li>
-        <li>Whisper-quiet motor mechanism</li>
-        <li>Set automated schedules for open and close</li>
-        <li>Available in straight and curved configurations</li>
-        <li>Ceiling or wall mount options</li>
-      </ul>
-      <div class="ideal-for">
-        <span class="ideal-tag">Smart Homes</span>
-        <span class="ideal-tag">Large Windows</span>
-        <span class="ideal-tag">High Ceilings</span>
-        <span class="ideal-tag">S-Fold Curtains</span>
-      </div>
+      <span class="tagline">Motorised & Smart</span>
+      <h2>Electric <em>Tracks</em></h2>
+      <p>Electric curtain tracks bring effortless automation to your window furnishings. Open and close your curtains at the touch of a button, via a smartphone app, or with a voice command through Google Home or Amazon Alexa.</p><p>Whisper-quiet, reliable and elegantly slim — ideal for large curtain spans, high windows, or simply the luxury of full home automation.</p>
+      <ul class="feature-list"><li>Control via remote, app or voice assistant</li><li>Compatible with Google Home and Amazon Alexa</li><li>Whisper-quiet motor mechanism</li><li>Set automated schedules for open and close</li><li>Available in straight and curved configurations</li><li>Ceiling or wall mount options</li></ul>
+      <div class="ideal-for"><span class="ideal-tag">Smart Homes</span><span class="ideal-tag">Large Windows</span><span class="ideal-tag">High Ceilings</span><span class="ideal-tag">S-Fold Curtains</span></div>
       <a href="/ucurtains/contact.html" class="btn-sm">Get a Quote</a>
     </div>
   </div>
 </div>
-
-<!-- RODS -->
 <div class="product-section" id="rods">
   <div class="product-inner">
-    <div class="product-visual" style="padding:0;overflow:hidden;">
-      <img src="curtain-rod.jpg" alt="Curtain rods Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
+    <div class="product-visual">
+      <img src="/ucurtains/curtain-rod.jpg" alt="Curtain rods Brisbane - U Curtains" loading="lazy">
       <div class="product-visual-label">Curtain Rods</div>
     </div>
-    </div>
     <div class="product-info">
-      <div class="tagline">Decorative & Functional</div>
+      <span class="tagline">Decorative & Functional</span>
       <h2>Curtain <em>Rods</em></h2>
-      <p>A beautiful curtain rod is the frame that completes your window. Our range of decorative rods suits every interior style — from sleek matte black for contemporary homes to brushed gold for a warmer, more luxurious feel.</p>
-      <p>Available in a variety of finishes, diameters and lengths, with matching finials and brackets. Ideal for eyelet, pinch pleat and tab-top curtain styles.</p>
-      <ul class="feature-list">
-        <li>Wide range of finishes: matte black, brushed nickel, gold, chrome and more</li>
-        <li>Multiple diameter options for different curtain weights</li>
-        <li>Matching finials and wall brackets included</li>
-        <li>Custom cut to your exact window width</li>
-        <li>Suitable for eyelet and pinch pleat curtains</li>
-      </ul>
-      <div class="ideal-for">
-        <span class="ideal-tag">Eyelet Curtains</span>
-        <span class="ideal-tag">Pinch Pleat Curtains</span>
-        <span class="ideal-tag">Feature Windows</span>
-        <span class="ideal-tag">Any Interior Style</span>
-      </div>
+      <p>A beautiful curtain rod is the frame that completes your window. Our range of decorative rods suits every interior style — from sleek matte black for contemporary homes to brushed gold for a warmer, more luxurious feel.</p><p>Available in a variety of finishes, diameters and lengths, with matching finials and brackets. Ideal for eyelet and pinch pleat curtain styles.</p>
+      <ul class="feature-list"><li>Wide range of finishes: matte black, brushed nickel, gold, chrome</li><li>Multiple diameter options for different curtain weights</li><li>Matching finials and wall brackets included</li><li>Custom cut to your exact window width</li><li>Suitable for eyelet and pinch pleat curtains</li></ul>
+      <div class="ideal-for"><span class="ideal-tag">Eyelet Curtains</span><span class="ideal-tag">Pinch Pleat Curtains</span><span class="ideal-tag">Feature Windows</span></div>
       <a href="/ucurtains/contact.html" class="btn-sm">Get a Quote</a>
     </div>
   </div>
 </div>
-
-<!-- EXTENDABLE TRACK -->
 <div class="product-section" id="extendable-track">
   <div class="product-inner">
-    <div class="product-visual" style="padding:0;overflow:hidden;">
-      <img src="extendable-track.jpg" alt="Extendable curtain track Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
+    <div class="product-visual">
+      <img src="/ucurtains/extendable-track.jpg" alt="Extendable curtain track Brisbane - U Curtains" loading="lazy">
       <div class="product-visual-label">Extendable Track</div>
     </div>
-    </div>
     <div class="product-info">
-      <div class="tagline">Flexible & Practical</div>
-      <h2><em>Extendable</em> Track</h2>
-      <p>Extendable curtain tracks are a practical and versatile solution for standard windows. They adjust to fit a range of widths without custom cutting, making them a quick and cost-effective option for straightforward installations.</p>
-      <p>Smooth-running gliders and a robust track profile ensure your curtains open and close effortlessly every day, with a clean and minimal appearance on the wall or ceiling.</p>
-      <ul class="feature-list">
-        <li>Adjustable width — no custom cutting required</li>
-        <li>Smooth-running curtain gliders included</li>
-        <li>Available in white and silver finishes</li>
-        <li>Wall or ceiling mount options</li>
-        <li>Cost-effective for standard window widths</li>
-        <li>Compatible with S-Fold and pinch pleat curtains</li>
-      </ul>
-      <div class="ideal-for">
-        <span class="ideal-tag">Standard Windows</span>
-        <span class="ideal-tag">Rental Properties</span>
-        <span class="ideal-tag">Budget-Friendly Projects</span>
-      </div>
+      <span class="tagline">Flexible & Practical</span>
+      <h2>Extendable <em>Track</em></h2>
+      <p>Extendable curtain tracks are a practical and versatile solution for standard windows. They adjust to fit a range of widths without custom cutting — a quick and cost-effective option for straightforward installations.</p><p>Smooth-running gliders and a robust track profile ensure your curtains open and close effortlessly every day.</p>
+      <ul class="feature-list"><li>Adjustable width — no custom cutting required</li><li>Smooth-running curtain gliders included</li><li>Available in white and silver finishes</li><li>Wall or ceiling mount options</li><li>Cost-effective for standard window widths</li><li>Compatible with S-Fold and pinch pleat curtains</li></ul>
+      <div class="ideal-for"><span class="ideal-tag">Standard Windows</span><span class="ideal-tag">Rental Properties</span><span class="ideal-tag">Budget Projects</span></div>
       <a href="/ucurtains/contact.html" class="btn-sm">Get a Quote</a>
     </div>
   </div>
 </div>
-
-<!-- CURVED TRACKS -->
 <div class="product-section" id="curved-tracks">
   <div class="product-inner">
-    <div class="product-visual" style="padding:0;overflow:hidden;">
-      <img src="curved-track.jpg" alt="Curved curtain tracks Brisbane - U Curtains" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
+    <div class="product-visual">
+      <img src="/ucurtains/curved-track.jpg" alt="Curved curtain tracks Brisbane - U Curtains" loading="lazy">
       <div class="product-visual-label">Curved Tracks</div>
     </div>
-    </div>
     <div class="product-info">
-      <div class="tagline">For Bay & Corner Windows</div>
-      <h2><em>Curved</em> Tracks</h2>
-      <p>Bay windows, corner windows and unusual window shapes require specially bent tracks that follow the exact angle of your window. Our curved tracks are bent to your precise measurements, allowing curtains to flow seamlessly around corners and curves.</p>
-      <p>Available in both standard and electric motorised versions, curved tracks let you dress even the most architecturally complex windows with elegance and ease.</p>
-      <ul class="feature-list">
-        <li>Custom bent to your exact window angle and dimensions</li>
-        <li>Suitable for bay windows, corner windows and curves</li>
-        <li>Available in manual and electric motorised versions</li>
-        <li>Smooth glider system for effortless curtain movement</li>
-        <li>Compatible with all curtain heading styles</li>
-      </ul>
-      <div class="ideal-for">
-        <span class="ideal-tag">Bay Windows</span>
-        <span class="ideal-tag">Corner Windows</span>
-        <span class="ideal-tag">Architectural Homes</span>
-        <span class="ideal-tag">Curved Walls</span>
-      </div>
+      <span class="tagline">For Bay & Corner Windows</span>
+      <h2>Curved <em>Tracks</em></h2>
+      <p>Bay windows, corner windows and unusual window shapes require specially bent tracks that follow the exact angle of your window. Our curved tracks are bent to your precise measurements.</p><p>Available in both standard and electric motorised versions — allowing curtains to flow seamlessly around corners and curves.</p>
+      <ul class="feature-list"><li>Custom bent to your exact window angle and dimensions</li><li>Suitable for bay windows, corner windows and curves</li><li>Available in manual and electric motorised versions</li><li>Smooth glider system for effortless movement</li><li>Compatible with all curtain heading styles</li></ul>
+      <div class="ideal-for"><span class="ideal-tag">Bay Windows</span><span class="ideal-tag">Corner Windows</span><span class="ideal-tag">Architectural Homes</span><span class="ideal-tag">Curved Walls</span></div>
       <a href="/ucurtains/contact.html" class="btn-sm">Get a Quote</a>
     </div>
   </div>
 </div>
-
 <div class="cta-banner">
   <h2>Not Sure Which Track or Rod You Need?</h2>
   <p>Our team will assess your windows and recommend the right hardware during your free in-home consultation.</p>
-  <a href="/ucurtains/contact.html" class="btn-white">Book Free Measure & Quote</a>
-  <div style="margin-top:1.5rem;"><a href="tel:0434840889" style="color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.9rem;">or call <strong style="color:white;">0434 840 889</strong></a></div>
-</div>
-
-<footer>
+  <a href="/ucurtains/contact.html" class="btn-white">Book Free Measure &amp; Quote</a>
+  <div style="margin-top:1.5rem;"><a href="tel:0434840889" style="color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.9rem;">or call <strong style="color:var(--gold);">0434 840 889</strong></a></div>
+</div><footer>
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="/ucurtains/" class="nav-logo" style="color:white;">U <span style="color:var(--gold)">Curtains</span></a>
+        <div class="footer-logo-name">U Curtains</div>
         <p>Brisbane's family-owned custom window furnishing specialists. Curtains, blinds, sheers and shutters — made to measure, professionally installed.</p>
-        <p style="margin-top:1rem;">ABN: 68664245005</p>
+        <p style="margin-top:0.5rem;font-size:0.78rem;color:rgba(255,255,255,0.35);">ABN: 68 664 245 005</p>
       </div>
-      <div class="footer-col">
-        <h4>Products</h4>
-        <ul>
-          <li><a href="/ucurtains/curtains.html">Curtains</a></li>
-          <li><a href="/ucurtains/sheers.html">Sheers</a></li>
-          <li><a href="/ucurtains/blinds.html">Blinds</a></li>
-          <li><a href="/ucurtains/shutters.html">Shutters</a></li>
-          <li><a href="/ucurtains/accessories.html">Accessories</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="/ucurtains/about.html">About Us</a></li>
-          <li><a href="/ucurtains/gallery.html">Gallery</a></li>
-          <li><a href="/ucurtains/support.html">Customer Support</a></li>
-          <li><a href="/ucurtains/contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col footer-contact">
-        <h4>Contact</h4>
+      <div class="footer-col"><h4>Products</h4><ul>
+        <li><a href="/ucurtains/curtains.html">Curtains</a></li>
+        <li><a href="/ucurtains/sheers.html">Sheers</a></li>
+        <li><a href="/ucurtains/blinds.html">Blinds</a></li>
+        <li><a href="/ucurtains/shutters.html">Shutters</a></li>
+        <li><a href="/ucurtains/accessories.html">Accessories</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Company</h4><ul>
+        <li><a href="/ucurtains/about.html">About Us</a></li>
+        <li><a href="/ucurtains/gallery.html">Gallery</a></li>
+        <li><a href="/ucurtains/support.html">Support</a></li>
+        <li><a href="/ucurtains/contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-col footer-contact"><h4>Contact</h4>
         <p>📞 <a href="tel:0434840889">0434 840 889</a></p>
         <p>✉ <a href="mailto:sale@ucurtains.com.au">sale@ucurtains.com.au</a></p>
-        <p>📍 2/1362 Beaudesert Road<br>Acacia Ridge QLD 4110</p>
+        <p>📍 1362 Beaudesert Rd<br>Acacia Ridge QLD 4110</p>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 U Curtains. All rights reserved.</span>
-      <span>Curtain Accessories Brisbane</span>
+      <span>Brisbane Window Furnishing Specialists</span>
     </div>
   </div>
-</footer>
-
-<script>
-function toggleMobile(){
-  const m=document.getElementById('mobileMenu');
-  m.classList.toggle('open');
-}
-function toggleSub(el){
-  el.classList.toggle('expanded');
-  el.nextElementSibling.classList.toggle('open');
-}
-document.addEventListener('click',function(e){
-  const m=document.getElementById('mobileMenu');
-  const h=document.querySelector('.hamburger');
-  if(!m.contains(e.target)&&!h.contains(e.target))m.classList.remove('open');
-});
-</script>
-</body>
-</html>
+</footer></body></html>
