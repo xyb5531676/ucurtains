@@ -64,7 +64,6 @@ body{font-family:'Nunito',sans-serif;color:#2d2d2d;background:#fff;}
         <a href="${BASE}/curtains.html#sfold">S-Fold</a>
         <a href="${BASE}/curtains.html#double-pinch">Double Pinch Pleat</a>
         <a href="${BASE}/curtains.html#triple-pinch">Triple Pinch Pleat</a>
-        <a href="${BASE}/curtains.html#box-pleat">Box Pleat</a>
         <a href="${BASE}/curtains.html#eyelet">Eyelet</a>
       </div>
     </li>
@@ -119,7 +118,6 @@ body{font-family:'Nunito',sans-serif;color:#2d2d2d;background:#fff;}
       <a href="${BASE}/curtains.html#sfold">S-Fold</a>
       <a href="${BASE}/curtains.html#double-pinch">Double Pinch Pleat</a>
       <a href="${BASE}/curtains.html#triple-pinch">Triple Pinch Pleat</a>
-      <a href="${BASE}/curtains.html#box-pleat">Box Pleat</a>
       <a href="${BASE}/curtains.html#eyelet">Eyelet</a>
     </div>
   </div>
