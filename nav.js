@@ -71,6 +71,8 @@ body{font-family:'Nunito',sans-serif;color:#2d2d2d;background:#fff;}
     <li class="nav-item">
       <a href="${BASE}/sheers.html">Sheers <span class="nav-arrow">▾</span></a>
       <div class="nav-dropdown">
+        <a href="${BASE}/sheers.html#transparent">Transparent Sheer</a>
+        <a href="${BASE}/sheers.html#privacy">Privacy Sheer</a>
         <a href="${BASE}/sheers.html#linen">Linen Sheers</a>
         <a href="${BASE}/sheers.html#polyester">Polyester Sheers</a>
       </div>
@@ -79,7 +81,6 @@ body{font-family:'Nunito',sans-serif;color:#2d2d2d;background:#fff;}
       <a href="${BASE}/blinds.html">Blinds <span class="nav-arrow">▾</span></a>
       <div class="nav-dropdown">
         <a href="${BASE}/blinds.html#zebra">Zebra Blinds</a>
-        <a href="${BASE}/blinds.html#smart">Smart Blinds</a>
         <a href="${BASE}/blinds.html#roman">Roman Blinds</a>
         <a href="${BASE}/blinds.html#roller">Roller Blinds</a>
         <a href="${BASE}/blinds.html#honeycomb">Honeycomb Blinds</a>
@@ -92,7 +93,6 @@ body{font-family:'Nunito',sans-serif;color:#2d2d2d;background:#fff;}
       <div class="nav-dropdown nav-dropdown-right">
         <a href="${BASE}/accessories.html#electric-tracks">Electric Tracks</a>
         <a href="${BASE}/accessories.html#rods">Rods</a>
-        <a href="${BASE}/accessories.html#extendable-track">Extendable Track</a>
         <a href="${BASE}/accessories.html#curved-tracks">Curved Tracks</a>
       </div>
     </li>
@@ -126,6 +126,8 @@ body{font-family:'Nunito',sans-serif;color:#2d2d2d;background:#fff;}
   <div class="mob-section">
     <div class="mob-title">Sheers <span class="mob-arr">▾</span></div>
     <div class="mob-sub">
+      <a href="${BASE}/sheers.html#transparent">Transparent Sheer</a>
+      <a href="${BASE}/sheers.html#privacy">Privacy Sheer</a>
       <a href="${BASE}/sheers.html#linen">Linen Sheers</a>
       <a href="${BASE}/sheers.html#polyester">Polyester Sheers</a>
     </div>
@@ -134,7 +136,6 @@ body{font-family:'Nunito',sans-serif;color:#2d2d2d;background:#fff;}
     <div class="mob-title">Blinds <span class="mob-arr">▾</span></div>
     <div class="mob-sub">
       <a href="${BASE}/blinds.html#zebra">Zebra Blinds</a>
-      <a href="${BASE}/blinds.html#smart">Smart Blinds</a>
       <a href="${BASE}/blinds.html#roman">Roman Blinds</a>
       <a href="${BASE}/blinds.html#roller">Roller Blinds</a>
       <a href="${BASE}/blinds.html#honeycomb">Honeycomb Blinds</a>
@@ -147,7 +148,6 @@ body{font-family:'Nunito',sans-serif;color:#2d2d2d;background:#fff;}
     <div class="mob-sub">
       <a href="${BASE}/accessories.html#electric-tracks">Electric Tracks</a>
       <a href="${BASE}/accessories.html#rods">Rods</a>
-      <a href="${BASE}/accessories.html#extendable-track">Extendable Track</a>
       <a href="${BASE}/accessories.html#curved-tracks">Curved Tracks</a>
     </div>
   </div>
