@@ -1,5 +1,5 @@
 (function() {
-  const BASE = '/ucurtains';
+  const BASE = '';
 
   const NAV_CSS = `<style id="navStyles">
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Nunito:wght@400;500;600;700&display=swap');
